@@ -28,7 +28,7 @@ APIs: RESTful
 ## 📌 Status do Projeto
 Em desenvolvimento. As funcionalidades estão sendo implementadas conforme o planejamento estabelecido.
 
-👥 Contribuidores
+## 👥 Contribuidores
 
 @lmateusfaria
 @Matheushgq
