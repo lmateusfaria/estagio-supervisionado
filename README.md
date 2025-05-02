@@ -31,5 +31,4 @@ Em desenvolvimento. As funcionalidades estão sendo implementadas conforme o pla
 👥 Contribuidores
 
 @lmateusfaria
-
 @Matheushgq
