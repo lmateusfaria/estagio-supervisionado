@@ -1,0 +1,190 @@
+2025-05-05T13:00:16.351-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 15472 (C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend)
+2025-05-05T13:00:16.351-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "test"
+2025-05-05T13:00:16.485-03:00  INFO 15472 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-05T13:00:16.497-03:00  INFO 15472 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-05T13:00:17.481-03:00  INFO 15472 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-05T13:00:17.497-03:00  INFO 15472 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-05-05T13:00:18.715-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-05T13:00:18.731-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-05T13:00:18.731-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-05T13:00:18.800-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-05T13:00:18.800-03:00  INFO 15472 --- [SMD-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2025-05-05T13:00:19.016-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-05T13:00:19.285-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdsmd user=SA
+2025-05-05T13:00:19.285-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-05T13:00:19.348-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-05T13:00:19.417-03:00  INFO 15472 --- [SMD-test] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-05T13:00:19.470-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-05T13:00:19.886-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-05T13:00:20.033-03:00  INFO 15472 --- [SMD-test] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-05T13:00:20.566-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-05T13:00:20.572-03:00  INFO 15472 --- [SMD-test] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T13:00:20.588-03:00  INFO 15472 --- [SMD-test] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void br.com.systemmanualdigital.services.DBService.initDB()
+2025-05-05T13:00:20.720-03:00  WARN 15472 --- [SMD-test] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-05T13:00:21.136-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdsmd'
+2025-05-05T13:00:21.205-03:00  WARN 15472 --- [SMD-test] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ff2d2170-e277-428c-bc99-6bc10621a6e9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-05T13:00:21.237-03:00  INFO 15472 --- [SMD-test] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-05T13:00:21.475-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-05T13:00:21.538-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-05T13:00:21.538-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 6.108 seconds (process running for 8.019)
+2025-05-05T16:13:02.168-03:00  INFO 15472 --- [SMD-test] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-05T16:13:02.168-03:00  INFO 15472 --- [SMD-test] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-05T16:13:02.184-03:00  INFO 15472 --- [SMD-test] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-05-05T17:17:42.589-03:00  INFO 15472 --- [SMD-test] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+2025-05-05T17:17:42.665-03:00  INFO 15472 --- [SMD-test] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-05T17:17:42.863-03:00  INFO 15472 --- [SMD-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-05T17:17:42.902-03:00  INFO 15472 --- [SMD-test] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:17:42.994-03:00  WARN 15472 --- [SMD-test] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-05T17:17:42.994-03:00  INFO 15472 --- [SMD-test] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-05T17:17:43.011-03:00  INFO 15472 --- [SMD-test] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-05T17:17:43.344-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 15472 (C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend)
+2025-05-05T17:17:43.344-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "test"
+2025-05-05T17:17:43.860-03:00  INFO 15472 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-05T17:17:43.860-03:00  INFO 15472 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-05-05T17:17:44.261-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-05T17:17:44.261-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-05T17:17:44.261-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-05T17:17:44.321-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-05T17:17:44.321-03:00  INFO 15472 --- [SMD-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 960 ms
+2025-05-05T17:17:44.424-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-05-05T17:17:44.424-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn90: url=jdbc:h2:mem:bdsmd user=SA
+2025-05-05T17:17:44.424-03:00  INFO 15472 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-05-05T17:17:44.440-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-05T17:17:44.446-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-05T17:17:44.493-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-05T17:17:44.493-03:00  INFO 15472 --- [SMD-test] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-05T17:17:46.133-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-05T17:17:46.264-03:00  INFO 15472 --- [SMD-test] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:17:46.346-03:00  INFO 15472 --- [SMD-test] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void br.com.systemmanualdigital.services.DBService.initDB()
+2025-05-05T17:17:46.640-03:00  WARN 15472 --- [SMD-test] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-05T17:17:47.122-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdsmd'
+2025-05-05T17:17:47.203-03:00  WARN 15472 --- [SMD-test] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ae799252-fcef-476e-b01c-51cd91b54837
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-05T17:17:47.213-03:00  INFO 15472 --- [SMD-test] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-05T17:17:47.404-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-05T17:17:47.786-03:00  INFO 15472 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-05T17:17:47.969-03:00  INFO 15472 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 4.745 seconds (process running for 15454.436)
+2025-05-05T17:17:47.986-03:00  INFO 15472 --- [SMD-test] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-05-05T17:17:49.869-03:00  INFO 15472 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-05T17:17:49.896-03:00  INFO 15472 --- [SMD-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-05T17:17:49.896-03:00  INFO 15472 --- [SMD-test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:17:49.907-03:00  WARN 15472 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-05T17:17:49.907-03:00  INFO 15472 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-05-05T17:17:49.907-03:00  INFO 15472 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-05-05T17:19:06.202-03:00  INFO 16444 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 16444 (C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend)
+2025-05-05T17:19:06.202-03:00  INFO 16444 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "test"
+2025-05-05T17:19:06.352-03:00  INFO 16444 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-05T17:19:06.352-03:00  INFO 16444 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-05T17:19:07.488-03:00  INFO 16444 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-05T17:19:07.526-03:00  INFO 16444 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-05-05T17:19:08.890-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-05T17:19:08.928-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-05T17:19:08.928-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-05T17:19:09.006-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-05T17:19:09.006-03:00  INFO 16444 --- [SMD-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2652 ms
+2025-05-05T17:19:09.228-03:00  INFO 16444 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-05T17:19:09.516-03:00  INFO 16444 --- [SMD-test] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdsmd user=SA
+2025-05-05T17:19:09.518-03:00  INFO 16444 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-05T17:19:09.575-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-05T17:19:09.691-03:00  INFO 16444 --- [SMD-test] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-05T17:19:09.795-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-05T17:19:10.477-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-05T17:19:10.592-03:00  INFO 16444 --- [SMD-test] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-05T17:19:12.509-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-05T17:19:12.571-03:00  INFO 16444 --- [SMD-test] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:19:12.602-03:00  INFO 16444 --- [SMD-test] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void br.com.systemmanualdigital.services.DBService.initDB()
+2025-05-05T17:19:12.731-03:00  WARN 16444 --- [SMD-test] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-05T17:19:13.179-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdsmd'
+2025-05-05T17:19:13.279-03:00  WARN 16444 --- [SMD-test] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: debcdf5a-48a8-4561-a3c4-09bef8a3ef5f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-05T17:19:13.310-03:00  INFO 16444 --- [SMD-test] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-05T17:19:13.579-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-05T17:19:13.647-03:00  INFO 16444 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-05T17:19:13.663-03:00  INFO 16444 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 8.437 seconds (process running for 10.371)
+2025-05-05T17:25:52.870-03:00  INFO 16444 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-05T17:25:52.886-03:00  INFO 16444 --- [SMD-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-05T17:25:52.898-03:00  INFO 16444 --- [SMD-test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:25:52.914-03:00  WARN 16444 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-05T17:25:52.914-03:00  INFO 16444 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-05T17:25:52.914-03:00  INFO 16444 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-05T17:26:04.759-03:00  INFO 5596 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 5596 (C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend)
+2025-05-05T17:26:04.772-03:00  INFO 5596 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "test"
+2025-05-05T17:26:04.920-03:00  INFO 5596 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-05T17:26:04.920-03:00  INFO 5596 --- [SMD-test] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-05T17:26:05.961-03:00  INFO 5596 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-05T17:26:05.976-03:00  INFO 5596 --- [SMD-test] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-05-05T17:26:07.141-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-05T17:26:07.163-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-05T17:26:07.163-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-05T17:26:07.241-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-05T17:26:07.241-03:00  INFO 5596 --- [SMD-test] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2321 ms
+2025-05-05T17:26:07.447-03:00  INFO 5596 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-05T17:26:07.726-03:00  INFO 5596 --- [SMD-test] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdsmd user=SA
+2025-05-05T17:26:07.726-03:00  INFO 5596 --- [SMD-test] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-05T17:26:07.811-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-05T17:26:07.880-03:00  INFO 5596 --- [SMD-test] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-05T17:26:07.927-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-05T17:26:08.381-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-05T17:26:08.497-03:00  INFO 5596 --- [SMD-test] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-05T17:26:09.831-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-05T17:26:09.884-03:00  INFO 5596 --- [SMD-test] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:26:09.900-03:00  INFO 5596 --- [SMD-test] [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void br.com.systemmanualdigital.services.DBService.initDB()
+2025-05-05T17:26:10.047-03:00  WARN 5596 --- [SMD-test] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-05T17:26:10.469-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdsmd'
+2025-05-05T17:26:10.532-03:00  WARN 5596 --- [SMD-test] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6f13ed99-555a-402a-bb60-18ac115426e1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-05T17:26:10.570-03:00  INFO 5596 --- [SMD-test] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-05T17:26:10.832-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-05T17:26:10.886-03:00  INFO 5596 --- [SMD-test] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-05T17:26:10.886-03:00  INFO 5596 --- [SMD-test] [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 7.112 seconds (process running for 9.128)
+2025-05-05T17:30:38.032-03:00  INFO 5596 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-05T17:30:38.032-03:00  INFO 5596 --- [SMD-test] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-05T17:30:38.048-03:00  INFO 5596 --- [SMD-test] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-05T17:30:38.048-03:00  WARN 5596 --- [SMD-test] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-05-05T17:30:38.048-03:00  INFO 5596 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-05T17:30:38.063-03:00  INFO 5596 --- [SMD-test] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
