@@ -1,0 +1,46 @@
+package br.com.systemmanualdigital.domains.user;
+
+
+import br.com.systemmanualdigital.domains.dtos.user.AdministradorDTO;
+import br.com.systemmanualdigital.domains.enums.TipoUsuario;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.PrimaryKeyJoinColumn;
+import jakarta.persistence.Table;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Entity
+@Table(name = "administradores")
+@PrimaryKeyJoinColumn(name = "usuario_id")  // Chave estrangeira para a tabela "persons"
+
+public class Administrador extends Usuario {
+
+    public Administrador() {
+        super();
+        addTipoUsuario(TipoUsuario.ADMINISTRADOR);
+    }
+
+    public Administrador(Long id, String email, String senha, String nome, String nomeEmpresa) {
+        super(id, email, senha, nome, nomeEmpresa);
+        addTipoUsuario(TipoUsuario.ADMINISTRADOR);
+    }
+
+    public Administrador(AdministradorDTO obj) {
+        this.id = obj.getId();
+        this.email = obj.getEmail();
+        this.senha = obj.getSenha();
+        this.nome = obj.getNome();
+        this.nomeEmpresa = obj.getNomeEmpresa();
+        this.dataCadastro = obj.getDataCadastro();
+        this.dataUltimoLogin = obj.getDataUltimoLogin();
+        this.tipoUsuario = obj.getTipoUsuario().stream()
+                .map(x -> x.getId()).collect(Collectors.toSet());
+        addTipoUsuario(TipoUsuario.ADMINISTRADOR);
+    }
+
+}

@@ -1,93 +1,87 @@
-package br.com.systemmanualdigital.domains;
+package br.com.systemmanualdigital.domains.user;
 
 
+import br.com.systemmanualdigital.domains.doc.Documento;
+import br.com.systemmanualdigital.domains.dtos.user.UsuarioDTO;
+import br.com.systemmanualdigital.domains.flow.FluxoDocumentos;
 import br.com.systemmanualdigital.domains.enums.TipoUsuario;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED) // Estratégia de herança
 @Table(name = "usuarios")
 //@Getter
 //@Setter
-public abstract class Usuario {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_usuarios")
-    private Long id;
+    protected Long id;
 
     @NotBlank
     @NotNull
-    private String email;
+    protected String email;
 
     @NotBlank
     @NotNull
-    private String senha;
+    protected String senha;
 
     @NotBlank
     @NotNull
-    private String nome;
+    protected String nome;
 
     @NotBlank
     @NotNull
-    private String nomeEmpresa;
+    protected String nomeEmpresa;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCadastro;
+    protected LocalDate dataCadastro;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataUltimoLogin;
+    protected LocalDate dataUltimoLogin;
 
-    @Enumerated(EnumType.STRING) // Alterado para STRING para maior legibilidade
-    @Column(name = "tipo_usuario")
-    private TipoUsuario tipoUsuario;
+
+    @ElementCollection(fetch = FetchType.EAGER) // Mude para EAGER para carregar automaticamente
+    @CollectionTable(name = "tipo_usuario")
+    protected Set<Integer> tipoUsuario = new HashSet<>();
+
+
+//    @Enumerated(EnumType.STRING) // Alterado para STRING para maior legibilidade
+//    @Column(name = "tipo_usuario")
+//    protected TipoUsuario tipoUsuario;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "usuarios") // Relacionamento inverso com FluxoDocumentos
-    private List<FluxoDocumentos> fluxoDocumentos = new ArrayList<>();
+    @OneToMany(mappedBy = "usuario") // Relacionamento inverso com FluxoDocumentos
+    protected List<FluxoDocumentos> fluxoDocumentos = new ArrayList<>();
 
-    @ManyToMany
-    @JoinTable(
-            name = "usuarios_documentos", // Nome da tabela intermediária
-            joinColumns = @JoinColumn(name = "usuario_id"), // Chave desta entidade
-            inverseJoinColumns = @JoinColumn(name = "documento_id") // Chave da entidade Documento
-    )
-    private List<Documento> documentos = new ArrayList<>();
+    @JsonIgnore
+    @OneToMany(mappedBy = "usuario")
+    protected List<Documento> documentos = new ArrayList<>();
 
     public Usuario() {
+        addTipoUsuario(TipoUsuario.COLABORADOR);
     }
 
-    public Usuario(Long id, String email, String senha, String nome, String nomeEmpresa, LocalDate dataCadastro, LocalDate dataUltimoLogin, TipoUsuario tipoUsuario) {
+    public Usuario(Long id, String email, String senha, String nome, String nomeEmpresa) {
         this.id = id;
         this.email = email;
         this.senha = senha;
         this.nome = nome;
         this.nomeEmpresa = nomeEmpresa;
-        this.dataCadastro = dataCadastro;
-        this.dataUltimoLogin = dataUltimoLogin;
-        this.tipoUsuario = tipoUsuario;
+        this.dataCadastro = LocalDate.now();
+        this.dataUltimoLogin = LocalDate.now();
+        addTipoUsuario(TipoUsuario.COLABORADOR);
     }
-
-    //    public Usuario(PokemonDTO dto) {
-//        this.id = dto.getId();
-//        this.nome = dto.getNome();
-//        this.tipoPokemon = TipoPokemon.toEnum(dto.getTipoPokemon());
-//        this.nivelPokemon = NivelPokemon.toEnum(dto.getNivelPokemon());
-//        this.pontosDeVida = dto.getPontosDeVida();
-//        this.ataque = dto.getAtaque();
-//        this.defesa = dto.getDefesa();
-//        this.velocidade = dto.getVelocidade();
-//        this.dataCaptura = dto.getDataCaptura();
-//        this.cpfPokemon = dto.getCpfPokemon();
-//    }
 
     public Long getId() {
         return id;
@@ -145,13 +139,6 @@ public abstract class Usuario {
         this.dataUltimoLogin = dataUltimoLogin;
     }
 
-    public TipoUsuario getTipoUsuario() {
-        return tipoUsuario;
-    }
-
-    public void setTipoUsuario(TipoUsuario tipoUsuario) {
-        this.tipoUsuario = tipoUsuario;
-    }
 
     public List<FluxoDocumentos> getFluxoDocumentos() {
         return fluxoDocumentos;
@@ -167,5 +154,17 @@ public abstract class Usuario {
 
     public void setDocumentos(List<Documento> documentos) {
         this.documentos = documentos;
+    }
+
+    public Set<Integer> getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(Set<Integer> tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
+    }
+
+    public void addTipoUsuario(TipoUsuario tipoUsuario) {
+        this.tipoUsuario.add(tipoUsuario.getId());
     }
 }
