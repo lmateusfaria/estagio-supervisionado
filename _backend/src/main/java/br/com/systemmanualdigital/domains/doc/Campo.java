@@ -1,4 +1,4 @@
-package br.com.systemmanualdigital.domains;
+package br.com.systemmanualdigital.domains.doc;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;

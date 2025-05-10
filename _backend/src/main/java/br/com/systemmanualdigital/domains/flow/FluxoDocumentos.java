@@ -1,6 +1,7 @@
-package br.com.systemmanualdigital.domains;
+package br.com.systemmanualdigital.domains.flow;
 
-import br.com.systemmanualdigital.domains.enums.StatusDocumento;
+import br.com.systemmanualdigital.domains.doc.Documento;
+import br.com.systemmanualdigital.domains.user.Usuario;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -33,12 +34,8 @@ public class FluxoDocumentos {
     @OneToMany(mappedBy = "fluxoDocumentos")
     private List<Documento> documentos = new ArrayList<>();
 
-    @ManyToMany
-    @JoinTable(
-            name = "fluxo_documentos_usuarios", // Nome da tabela intermediária
-            joinColumns = @JoinColumn(name = "fluxo_documentos_id"), // Chave desta classe
-            inverseJoinColumns = @JoinColumn(name = "usuario_id") // Chave da outra classe
-    )
-    private List<Usuario> usuarios = new ArrayList<>();
+    @ManyToOne//relacao de * para 1
+    @JoinColumn(name="idUsuario")
+    private Usuario usuario;
 
 }
