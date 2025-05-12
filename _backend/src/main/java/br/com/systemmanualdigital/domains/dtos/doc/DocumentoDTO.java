@@ -3,25 +3,15 @@ package br.com.systemmanualdigital.domains.dtos.doc;
 import br.com.systemmanualdigital.domains.doc.Campo;
 import br.com.systemmanualdigital.domains.doc.Documento;
 import br.com.systemmanualdigital.domains.enums.StatusDocumento;
-import br.com.systemmanualdigital.domains.enums.TipoUsuario;
-import br.com.systemmanualdigital.domains.user.Administrador;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
-import java.time.LocalDate;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 public class DocumentoDTO {
 
     private Long id;
     private String nome;
     private String arquivo;
-    private Integer versao;
+    private Integer versaoDoc;
     private StatusDocumento statusDocumento;
     private List<Campo> campos;
 
@@ -32,7 +22,7 @@ public class DocumentoDTO {
         this.id = documento.getId();
         this.nome = documento.getNome();
         this.arquivo = documento.getArquivo();
-        this.versao = documento.getVersao();
+        this.versaoDoc = documento.getVersaoDoc();
         this.statusDocumento = documento.getStatusDocumento();
         this.campos = documento.getCampos();
     }
@@ -61,12 +51,12 @@ public class DocumentoDTO {
         this.arquivo = arquivo;
     }
 
-    public Integer getVersao() {
-        return versao;
+    public Integer getVersaoDoc() {
+        return versaoDoc;
     }
 
-    public void setVersao(Integer versao) {
-        this.versao = versao;
+    public void setVersaoDoc(Integer versaoDoc) {
+        this.versaoDoc = versaoDoc;
     }
 
     public StatusDocumento getStatusDocumento() {

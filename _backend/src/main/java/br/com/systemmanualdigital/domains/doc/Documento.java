@@ -1,5 +1,6 @@
 package br.com.systemmanualdigital.domains.doc;
 
+import br.com.systemmanualdigital.domains.dtos.doc.DocumentoDTO;
 import br.com.systemmanualdigital.domains.enums.StatusDocumento;
 import br.com.systemmanualdigital.domains.flow.FluxoDocumentos;
 import br.com.systemmanualdigital.domains.user.Usuario;
@@ -26,9 +27,8 @@ public class Documento {
     @NotNull
     private String arquivo;
 
-    @NotBlank
     @NotNull
-    private Integer versao;
+    private Integer versaoDoc;
 
     @Enumerated(EnumType.ORDINAL)
     @JoinColumn(name = "statusDocumento")
@@ -49,12 +49,23 @@ public class Documento {
     }
 
     // Construtor completo (caso necessário)
-    public Documento(String nome, String arquivo, Integer versao, StatusDocumento statusDocumento, List<Campo> campos) {
+    public Documento(Long id,String nome, String arquivo, Integer versaoDoc, Usuario usuario, FluxoDocumentos fluxoDocumentos) {
+        this.id = id;
         this.nome = nome;
         this.arquivo = arquivo;
-        this.versao = versao;
-        this.statusDocumento = statusDocumento;
-        this.campos = campos;
+        this.versaoDoc = versaoDoc;
+        this.usuario = usuario;
+        this.fluxoDocumentos = fluxoDocumentos;
+        this.statusDocumento = StatusDocumento.NAOPREENCHIDO;
+    }
+
+    public Documento(DocumentoDTO objDto) {
+        this.id = objDto.getId();
+        this.nome = objDto.getNome();
+        this.arquivo = objDto.getArquivo();
+        this.versaoDoc = objDto.getVersaoDoc();
+        this.statusDocumento = objDto.getStatusDocumento();
+        this.campos = new ArrayList<>();
     }
 
     public Long getId() {
@@ -81,12 +92,12 @@ public class Documento {
         this.arquivo = arquivo;
     }
 
-    public Integer getVersao() {
-        return versao;
+    public Integer getVersaoDoc() {
+        return versaoDoc;
     }
 
-    public void setVersao(Integer versao) {
-        this.versao = versao;
+    public void setVersaoDoc(Integer versaoDoc) {
+        this.versaoDoc = versaoDoc;
     }
 
     public StatusDocumento getStatusDocumento() {

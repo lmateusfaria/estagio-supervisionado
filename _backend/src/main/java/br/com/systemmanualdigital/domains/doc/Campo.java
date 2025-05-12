@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -25,13 +26,12 @@ public class Campo {
 
     @NotBlank
     @NotNull
-    private Double posicaoX;
+    private BigDecimal posicaoX;
 
     @NotBlank
     @NotNull
-    private Double posicaoY;
+    private BigDecimal posicaoY;
 
-    @NotBlank
     @NotNull
     private Integer pagina;
 
@@ -42,7 +42,7 @@ public class Campo {
     public Campo() {
     }
 
-    public Campo(Long id, String nome, String conteudo, Double posicaoX, Double posicaoY, Integer pagina, Documento documento) {
+    public Campo(Long id, String nome, String conteudo, BigDecimal posicaoX, BigDecimal posicaoY, Integer pagina, Documento documento) {
         this.id = id;
         this.nome = nome;
         this.conteudo = conteudo;
@@ -76,19 +76,19 @@ public class Campo {
         this.conteudo = conteudo;
     }
 
-    public Double getPosicaoX() {
+    public BigDecimal getPosicaoX() {
         return posicaoX;
     }
 
-    public void setPosicaoX(Double posicaoX) {
+    public void setPosicaoX(BigDecimal posicaoX) {
         this.posicaoX = posicaoX;
     }
 
-    public Double getPosicaoY() {
+    public BigDecimal getPosicaoY() {
         return posicaoY;
     }
 
-    public void setPosicaoY(Double posicaoY) {
+    public void setPosicaoY(BigDecimal posicaoY) {
         this.posicaoY = posicaoY;
     }
 
