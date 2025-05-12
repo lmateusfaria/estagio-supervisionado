@@ -57,10 +57,10 @@ public class ColaboradorService {
 
     public void delete(Long id){
         Colaborador obj = findbyId(id);
-        if (obj.getDocumentos().isEmpty()){
+        if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Colaborador não pode ser deletado! Possui documento vinculado.");
         }
-        if (obj.getFluxoDocumentos().isEmpty()){
+        if (!obj.getFluxoDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Colaborador não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 
