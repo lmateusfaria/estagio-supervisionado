@@ -30,16 +30,18 @@ public class DocumentoService {
     }
 
     public Documento create(DocumentoDTO objDto) {
-        Documento documento = new Documento(objDto.getNome(), objDto.getArquivo(), objDto.getVersao(),
-                objDto.getStatusDocumento(), objDto.getCampos());
-        return documentoRepo.save(documento);
+        objDto.setId(null);
+//        validaAdministrador(objDto);
+        Documento obj = new Documento(objDto);
+
+        return documentoRepo.save(obj);
     }
 
     public Documento update(Long id, DocumentoDTO objDto) {
         Documento existingDocumento = findById(id);
         existingDocumento.setNome(objDto.getNome());
         existingDocumento.setArquivo(objDto.getArquivo());
-        existingDocumento.setVersao(objDto.getVersao());
+        existingDocumento.setVersaoDoc(objDto.getVersaoDoc());
         existingDocumento.setStatusDocumento(objDto.getStatusDocumento());
         return documentoRepo.save(existingDocumento);
     }
