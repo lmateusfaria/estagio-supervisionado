@@ -59,6 +59,7 @@ public class GestorResource {
         return ResponseEntity.created(uri).build();
     }
 
+
     @Operation(summary = "Atualizar gestor por ID", description = "Atualiza as informações de um gestor específico.")
     @PutMapping(value = "/{id}")
     public ResponseEntity<GestorDTO> update(
