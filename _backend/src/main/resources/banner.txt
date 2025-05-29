@@ -1,0 +1,11 @@
+
+       _____  __  __  ____
+      / ____||  \/  ||  _ \
+     | (___  | \  / || | | |         @lmateusfaria
+      \___ \ | |\/| || | | |         @Matheushgq
+      ____) || |  | || |_| |
+     |_____/ |_|  |_||____/
+
+           (◉ SMD ◉) - System Manual Digital
+           ( Spring Boot 3 | Java 21 | API REST )
+
