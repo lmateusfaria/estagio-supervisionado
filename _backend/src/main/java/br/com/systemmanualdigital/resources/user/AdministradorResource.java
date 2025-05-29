@@ -3,7 +3,9 @@ package br.com.systemmanualdigital.resources.user;
 import br.com.systemmanualdigital.domains.dtos.user.AdministradorDTO;
 import br.com.systemmanualdigital.domains.dtos.user.UsuarioDTO;
 import br.com.systemmanualdigital.domains.user.Administrador;
+import br.com.systemmanualdigital.domains.user.Usuario;
 import br.com.systemmanualdigital.services.user.AdministradorService;
+import br.com.systemmanualdigital.services.user.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -24,6 +26,10 @@ public class AdministradorResource {
     @Autowired
     private AdministradorService adminService;
 
+    @Autowired
+    private UsuarioService usuarioService;
+
+
     @Operation(summary = "Retorna todos os administradores", description = "Busca todos os administradores cadastrados no sistema.")
     @GetMapping
     public ResponseEntity<List<AdministradorDTO>> findAll() {
@@ -33,7 +39,16 @@ public class AdministradorResource {
     @Operation(summary = "Retorna todos os usuários", description = "Busca todos os usuários cadastrados no sistema.")
     @GetMapping(value = "/listarUsuarios")
     public ResponseEntity<List<UsuarioDTO>> findAllUsers() {
-        return ResponseEntity.ok().body(adminService.findAllUsers());
+        return ResponseEntity.ok().body(usuarioService.findAll());
+    }
+
+    @Operation(summary = "Busca um usuario por ID", description = "Retorna as informações específicas de um usuario através do ID.")
+    @GetMapping(value = "/listarUsuario/{id}")
+    public ResponseEntity<UsuarioDTO> findByIdUser(
+            @Parameter(description = "ID do usuario a ser buscado", example = "1", required = true)
+            @PathVariable Long id) {
+        Usuario obj = this.usuarioService.findbyId(id);
+        return ResponseEntity.ok().body(new UsuarioDTO(obj));
     }
 
     @Operation(summary = "Busca um administrador por ID", description = "Retorna as informações específicas de um administrador através do ID.")
@@ -67,7 +82,7 @@ public class AdministradorResource {
     }
 
     @Operation(summary = "Atualizar administrador por ID", description = "Atualiza as informações de um administrador específico.")
-    @PutMapping
+    @PutMapping(value = "/{id}")
     public ResponseEntity<AdministradorDTO> update(
             @Parameter(description = "ID do administrador a ser atualizado", example = "1", required = true)
             @PathVariable Long id,
