@@ -24,7 +24,7 @@ public class GestorService {
     public List<GestorDTO> findAll(){
         //retorna uma lista de GestorDTO
         return gestorRepo.findAll().stream()
-                .map(obj -> new GestorDTO(obj))
+                .map(GestorDTO::new)
                 .collect(Collectors.toList());
     }
 
@@ -59,6 +59,9 @@ public class GestorService {
 
     public void delete(Long id){
         Gestor obj = findbyId(id);
+        if (!obj.getColaboradores().isEmpty()){
+            throw new DataIntegrityViolationException("Gestor não pode ser deletado! Possui colaborador vinculado.");
+        }
         if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Gestor não pode ser deletado! Possui documento vinculado.");
         }
@@ -67,6 +70,7 @@ public class GestorService {
         }
 
         gestorRepo.deleteById(id);
+
     }
 
     private void validaGestor(GestorDTO objDto){

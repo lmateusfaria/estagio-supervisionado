@@ -17,30 +17,20 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class AdministradorService {
-    @Autowired
-    private AdministradorRepository administradorRepo;
+public class UsuarioService {
 
     @Autowired
     private UsuarioRepository usuarioRepo;
 
-    public List<AdministradorDTO> findAll() {
-        return administradorRepo.findAll().stream()
-                .map(AdministradorDTO::new) // Construtor já lida com a conversão
-                .collect(Collectors.toList());
-    }
-
-    public List<UsuarioDTO> findAllUsers(){
-        //retorna uma lista de AdministradorDTO
+    public List<UsuarioDTO> findAll(){
+        //retorna uma lista de usuarioRepoDTO
         return usuarioRepo.findAll().stream()
                 .map(UsuarioDTO::new)
                 .collect(Collectors.toList());
     }
 
-
-
-    public Administrador findbyId(Long id){
-        Optional<Administrador> obj = administradorRepo.findById(id);
+    public Usuario findbyId(Long id){
+        Optional<Usuario> obj = usuarioRepo.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! Id: " + id ));
     }
 
@@ -49,35 +39,34 @@ public class AdministradorService {
 //        return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! Id: " + cpf ));
 //    }
 
-    public Administrador findbyEmail(String email){
-        Optional<Administrador> obj = administradorRepo.findByEmail(email);
+    public Usuario findbyEmail(String email){
+        Optional<Usuario> obj = usuarioRepo.findByEmail(email);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto(Email) não encontrado! Email: " + email ));
     }
 
-    public Administrador create(AdministradorDTO objDto){
+    public Usuario create(UsuarioDTO objDto){
         objDto.setId(null);
-        validaAdministrador(objDto);
-        Administrador obj = new Administrador(objDto);
-        return administradorRepo.save(obj);
+        Usuario obj = new Usuario(objDto);
+        return usuarioRepo.save(obj);
     }
 
-    public Administrador update(Long id, AdministradorDTO objDto){
+    public Usuario update(Long id, UsuarioDTO objDto){
         objDto.setId(id);
-        Administrador oldObj = findbyId(id);
-        oldObj = new Administrador(objDto);
-        return administradorRepo.save(oldObj);
+        Usuario oldObj = findbyId(id);
+        oldObj = new Usuario(objDto);
+        return usuarioRepo.save(oldObj);
     }
 
     public void delete(Long id){
-        Administrador obj = findbyId(id);
+        Usuario obj = findbyId(id);
         if (!obj.getDocumentos().isEmpty()){
-            throw new DataIntegrityViolationException("Administrador não pode ser deletado! Possui documento vinculado.");
+            throw new DataIntegrityViolationException("Usuario não pode ser deletado! Possui documento vinculado.");
         }
         if (!obj.getFluxoDocumentos().isEmpty()){
-            throw new DataIntegrityViolationException("Administrador não pode ser deletado! Possui fluxo de documentos vinculado.");
+            throw new DataIntegrityViolationException("Usuario não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 
-        administradorRepo.deleteById(id);
+        usuarioRepo.deleteById(id);
     }
 
     private void validaAdministrador(AdministradorDTO objDto){

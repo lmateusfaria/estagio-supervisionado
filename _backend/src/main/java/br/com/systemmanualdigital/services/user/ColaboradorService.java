@@ -4,7 +4,9 @@ package br.com.systemmanualdigital.services.user;
 import br.com.systemmanualdigital.domains.dtos.user.ColaboradorDTO;
 import br.com.systemmanualdigital.domains.dtos.user.ColaboradorDTO;
 import br.com.systemmanualdigital.domains.user.Colaborador;
+import br.com.systemmanualdigital.domains.user.Gestor;
 import br.com.systemmanualdigital.repositories.user.ColaboradorRepository;
+import br.com.systemmanualdigital.repositories.user.GestorRepository;
 import br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -18,7 +20,9 @@ import java.util.stream.Collectors;
 public class ColaboradorService {
     @Autowired
     private ColaboradorRepository colaboradorRepo;
-    
+    @Autowired
+    private GestorRepository gestorRepository;
+
     public List<ColaboradorDTO> findAll(){
         //retorna uma lista de ColaboradorDTO
         return colaboradorRepo.findAll().stream()
@@ -44,14 +48,22 @@ public class ColaboradorService {
     public Colaborador create(ColaboradorDTO objDto){
         objDto.setId(null);
         validaColaborador(objDto);
-        Colaborador obj = new Colaborador(objDto);
+        Gestor gestor = gestorRepository.findById(objDto.getGestorId())
+                .orElseThrow(() -> new RuntimeException("Gestor não encontrado!"));
+
+        Colaborador obj = new Colaborador(objDto, gestor);
         return colaboradorRepo.save(obj);
     }
 
     public Colaborador update(Long id, ColaboradorDTO objDto){
         objDto.setId(id);
         Colaborador oldObj = findbyId(id);
-        oldObj = new Colaborador(objDto);
+        if(oldObj.getGestor().getId() != objDto.getGestorId()){
+            throw new RuntimeException("Gestor não pode alterar esse Colaborador!");
+        }
+        Gestor gestor = gestorRepository.findById(objDto.getGestorId())
+                .orElseThrow(() -> new RuntimeException("Gestor não encontrado!"));
+        oldObj = new Colaborador(objDto, gestor);
         return colaboradorRepo.save(oldObj);
     }
 

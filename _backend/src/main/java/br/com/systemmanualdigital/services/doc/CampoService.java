@@ -1,11 +1,12 @@
 package br.com.systemmanualdigital.services.doc;
 
 import br.com.systemmanualdigital.domains.doc.Campo;
+import br.com.systemmanualdigital.domains.doc.Documento;
 import br.com.systemmanualdigital.domains.dtos.doc.CampoDTO;
 import br.com.systemmanualdigital.repositories.doc.CampoRepository;
+import br.com.systemmanualdigital.repositories.doc.DocumentoRepository;
 import br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,8 @@ public class CampoService {
 
     @Autowired
     private CampoRepository campoRepo;
+    @Autowired
+    private DocumentoRepository documentoRepository;
 
     public List<CampoDTO> findAll() {
         return campoRepo.findAll().stream()
@@ -30,8 +33,9 @@ public class CampoService {
     }
 
     public Campo create(CampoDTO objDto) {
+        Documento doc = documentoRepository.getReferenceById(objDto.getDocumentoId());
         Campo campo = new Campo(objDto.getId(), objDto.getNome(), objDto.getConteudo(), objDto.getPosicaoX(),
-                objDto.getPosicaoY(), objDto.getPagina(), objDto.getDocumento());
+                objDto.getPosicaoY(), objDto.getPagina(), doc);
         return campoRepo.save(campo);
     }
 
