@@ -5,6 +5,7 @@ import br.com.systemmanualdigital.domains.doc.Documento;
 import br.com.systemmanualdigital.domains.enums.StatusDocumento;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DocumentoDTO {
 
@@ -13,7 +14,9 @@ public class DocumentoDTO {
     private String arquivo;
     private Integer versaoDoc;
     private StatusDocumento statusDocumento;
-    private List<Campo> campos;
+    private List<Long> campos;
+    private Long idCriador;
+    private String nomeCriador;
 
     public DocumentoDTO() {
     }
@@ -24,7 +27,9 @@ public class DocumentoDTO {
         this.arquivo = documento.getArquivo();
         this.versaoDoc = documento.getVersaoDoc();
         this.statusDocumento = documento.getStatusDocumento();
-        this.campos = documento.getCampos();
+        this.campos = documento.getCampos().stream().map(x -> x.getId()).collect(Collectors.toList());
+        this.idCriador = documento.getUsuario().getId();
+        this.nomeCriador = documento.getUsuario().getNome();
     }
 
     public Long getId() {
@@ -67,11 +72,27 @@ public class DocumentoDTO {
         this.statusDocumento = statusDocumento;
     }
 
-    public List<Campo> getCampos() {
+    public List<Long> getCampos() {
         return campos;
     }
 
-    public void setCampos(List<Campo> campos) {
+    public void setCampos(List<Long> campos) {
         this.campos = campos;
+    }
+
+    public Long getIdCriador() {
+        return idCriador;
+    }
+
+    public void setIdCriador(Long idCriador) {
+        this.idCriador = idCriador;
+    }
+
+    public String getNomeCriador() {
+        return nomeCriador;
+    }
+
+    public void setNomeCriador(String nomeCriador) {
+        this.nomeCriador = nomeCriador;
     }
 }

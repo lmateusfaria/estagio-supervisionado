@@ -29,11 +29,13 @@ public class Gestor extends Usuario {
 
     public Gestor() {
         super();
+        addTipoUsuario(TipoUsuario.COLABORADOR);
         addTipoUsuario(TipoUsuario.GESTOR);
     }
 
     public Gestor(Long id, String email, String senha, String nome, String nomeEmpresa) {
         super(id, email, senha, nome, nomeEmpresa);
+        addTipoUsuario(TipoUsuario.COLABORADOR);
         addTipoUsuario(TipoUsuario.GESTOR);
     }
 
@@ -46,7 +48,8 @@ public class Gestor extends Usuario {
         this.dataCadastro = obj.getDataCadastro();
         this.dataUltimoLogin = obj.getDataUltimoLogin();
         this.tipoUsuario = obj.getTipoUsuario().stream()
-                        .map(x -> x.getId()).collect(Collectors.toSet());
+                .map(TipoUsuario::getId).collect(Collectors.toSet());
+        addTipoUsuario(TipoUsuario.COLABORADOR);
         addTipoUsuario(TipoUsuario.GESTOR);
     }
 

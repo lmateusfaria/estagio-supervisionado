@@ -24,11 +24,9 @@ public class Campo {
     @NotNull
     private String conteudo;
 
-    @NotBlank
     @NotNull
     private BigDecimal posicaoX;
 
-    @NotBlank
     @NotNull
     private BigDecimal posicaoY;
 

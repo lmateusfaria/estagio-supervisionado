@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED) // Estratégia de herança
@@ -45,14 +46,15 @@ public class Usuario {
     protected String nomeEmpresa;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataCadastro;
+    protected LocalDate dataCadastro = LocalDate.now();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataUltimoLogin;
+    protected LocalDate dataUltimoLogin = LocalDate.now();
 
 
-    @ElementCollection(fetch = FetchType.EAGER) // Mude para EAGER para carregar automaticamente
-    @CollectionTable(name = "tipo_usuario")
+    @ElementCollection(fetch = FetchType.LAZY) // ou LAZY, conforme o uso
+    @CollectionTable(name = "usuario_tipo", joinColumns = @JoinColumn(name = "usuario_id"))
+    @Column(name = "tipo_usuario_id")
     protected Set<Integer> tipoUsuario = new HashSet<>();
 
 
@@ -78,8 +80,19 @@ public class Usuario {
         this.senha = senha;
         this.nome = nome;
         this.nomeEmpresa = nomeEmpresa;
-        this.dataCadastro = LocalDate.now();
-        this.dataUltimoLogin = LocalDate.now();
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+    }
+
+    public Usuario(UsuarioDTO obj) {
+        this.id = obj.getId();
+        this.email = obj.getEmail();
+        this.senha = obj.getSenha();
+        this.nome = obj.getNome();
+        this.nomeEmpresa = obj.getNomeEmpresa();
+        this.dataCadastro = obj.getDataCadastro();
+        this.dataUltimoLogin = obj.getDataUltimoLogin();
+        this.tipoUsuario = obj.getTipoUsuario().stream()
+                .map(TipoUsuario::getId).collect(Collectors.toSet());
         addTipoUsuario(TipoUsuario.COLABORADOR);
     }
 

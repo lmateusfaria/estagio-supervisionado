@@ -38,7 +38,7 @@ public class Colaborador extends Usuario {
         addTipoUsuario(TipoUsuario.COLABORADOR);
     }
 
-    public Colaborador(ColaboradorDTO obj){
+    public Colaborador(ColaboradorDTO obj, Gestor gestor) {
         this.id = obj.getId();
         this.email = obj.getEmail();
         this.senha = obj.getSenha();
@@ -49,6 +49,8 @@ public class Colaborador extends Usuario {
         this.tipoUsuario = obj.getTipoUsuario().stream()
                         .map(x -> x.getId()).collect(Collectors.toSet());
         addTipoUsuario(TipoUsuario.COLABORADOR);
+
+        this.gestor = gestor;
     }
 
     public Gestor getGestor() {

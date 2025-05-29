@@ -34,12 +34,12 @@ public class GestorDTO {
     private String nomeEmpresa;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCadastro;
+    private LocalDate dataCadastro = LocalDate.now();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataUltimoLogin;
+    private LocalDate dataUltimoLogin = LocalDate.now();
 
-    private Set<Integer> tipoUsuario = new HashSet<>();
+    private final Set<Integer> tipoUsuario = new HashSet<>();
 
     public GestorDTO() {
     }
@@ -50,9 +50,11 @@ public class GestorDTO {
         this.senha = gestor.getSenha();
         this.nome = gestor.getNome();
         this.nomeEmpresa = gestor.getNomeEmpresa();
-        this.dataCadastro = gestor.getDataCadastro();
-        this.dataUltimoLogin = gestor.getDataUltimoLogin();
-        this.tipoUsuario.stream().map(TipoUsuario::toEnum).collect(Collectors.toSet());
+
+        gestor.getTipoUsuario().forEach(tipo ->
+                this.tipoUsuario.add(tipo)
+        );
+
     }
 
 
@@ -114,9 +116,6 @@ public class GestorDTO {
 
 
     public Set<TipoUsuario> getTipoUsuario() {
-        if (tipoUsuario == null) {
-            return Collections.emptySet();
-        }
         return tipoUsuario.stream()
                 .map(TipoUsuario::toEnum)
                 .collect(Collectors.toSet());

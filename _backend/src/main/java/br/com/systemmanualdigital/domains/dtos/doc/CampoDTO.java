@@ -2,10 +2,8 @@ package br.com.systemmanualdigital.domains.dtos.doc;
 
 import br.com.systemmanualdigital.domains.doc.Campo;
 import br.com.systemmanualdigital.domains.doc.Documento;
-import br.com.systemmanualdigital.domains.enums.StatusDocumento;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 public class CampoDTO {
 
@@ -15,7 +13,7 @@ public class CampoDTO {
     private BigDecimal posicaoX;
     private BigDecimal posicaoY;
     private Integer pagina;
-    private Documento documento;
+    private Long documentoId;
 
     public CampoDTO() {
     }
@@ -27,7 +25,7 @@ public class CampoDTO {
         this.posicaoX = campo.getPosicaoX();
         this.posicaoY = campo.getPosicaoY();
         this.pagina = campo.getPagina();
-        this.documento = campo.getDocumento();
+        this.documentoId = campo.getDocumento().getId();
     }
 
     public Long getId() {
@@ -78,11 +76,11 @@ public class CampoDTO {
         this.pagina = pagina;
     }
 
-    public Documento getDocumento() {
-        return documento;
+    public Long getDocumentoId() {
+        return documentoId;
     }
 
-    public void setDocumento(Documento documento) {
-        this.documento = documento;
+    public void setDocumentoId(Long documentoId) {
+        this.documentoId = documentoId;
     }
 }

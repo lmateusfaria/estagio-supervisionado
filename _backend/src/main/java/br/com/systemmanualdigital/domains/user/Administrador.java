@@ -22,11 +22,15 @@ public class Administrador extends Usuario {
 
     public Administrador() {
         super();
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+        addTipoUsuario(TipoUsuario.GESTOR);
         addTipoUsuario(TipoUsuario.ADMINISTRADOR);
     }
 
     public Administrador(Long id, String email, String senha, String nome, String nomeEmpresa) {
         super(id, email, senha, nome, nomeEmpresa);
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+        addTipoUsuario(TipoUsuario.GESTOR);
         addTipoUsuario(TipoUsuario.ADMINISTRADOR);
     }
 
@@ -39,7 +43,9 @@ public class Administrador extends Usuario {
         this.dataCadastro = obj.getDataCadastro();
         this.dataUltimoLogin = obj.getDataUltimoLogin();
         this.tipoUsuario = obj.getTipoUsuario().stream()
-                .map(x -> x.getId()).collect(Collectors.toSet());
+                .map(TipoUsuario::getId).collect(Collectors.toSet());
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+        addTipoUsuario(TipoUsuario.GESTOR);
         addTipoUsuario(TipoUsuario.ADMINISTRADOR);
     }
 

@@ -34,14 +34,15 @@ public class ColaboradorDTO {
     private String nomeEmpresa;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCadastro;
+    private LocalDate dataCadastro = LocalDate.now();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataUltimoLogin;
+    private LocalDate dataUltimoLogin = LocalDate.now();
 
     private Set<Integer> tipoUsuario = new HashSet<>();
 
     private Long gestorId; // Adiciona um ID para o Gestor associado
+    private String nomeGestor; // Adiciona o nome do Gestor associado
 
     public ColaboradorDTO() {
     }
@@ -54,7 +55,14 @@ public class ColaboradorDTO {
         this.nomeEmpresa = colaborador.getNomeEmpresa();
         this.dataCadastro = colaborador.getDataCadastro();
         this.dataUltimoLogin = colaborador.getDataUltimoLogin();
-        this.tipoUsuario.stream().map(TipoUsuario::toEnum).collect(Collectors.toSet());
+
+        colaborador.getTipoUsuario().forEach(tipo ->
+                this.tipoUsuario.add(tipo)
+        );
+
+        this.gestorId = colaborador.getGestor().getId();
+        this.nomeGestor = colaborador.getGestor().getNome();
+
     }
 
     public Long getId() {
@@ -134,4 +142,12 @@ public class ColaboradorDTO {
         this.tipoUsuario.add(tipoUsuario.getId());
     }
 
+
+    public String getNomeGestor() {
+        return nomeGestor;
+    }
+
+    public void setNomeGestor(String nomeGestor) {
+        this.nomeGestor = nomeGestor;
+    }
 }

@@ -51,7 +51,11 @@ public class UsuarioDTO {
         this.nomeEmpresa = usuario.getNomeEmpresa();
         this.dataCadastro = usuario.getDataCadastro();
         this.dataUltimoLogin = usuario.getDataUltimoLogin();
-        this.tipoUsuario.stream().map(TipoUsuario::toEnum).collect(Collectors.toSet());
+
+        usuario.getTipoUsuario().forEach(tipo ->
+                this.tipoUsuario.add(tipo)
+        );
+
     }
 
     public Long getId() {

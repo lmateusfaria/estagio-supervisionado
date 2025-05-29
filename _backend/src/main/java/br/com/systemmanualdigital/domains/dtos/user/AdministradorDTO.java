@@ -4,6 +4,7 @@ import br.com.systemmanualdigital.domains.enums.TipoUsuario;
 import br.com.systemmanualdigital.domains.user.Administrador;
 import br.com.systemmanualdigital.domains.user.Usuario;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -34,12 +35,12 @@ public class AdministradorDTO {
     private String nomeEmpresa;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCadastro;
+    private LocalDate dataCadastro = LocalDate.now();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataUltimoLogin;
+    private LocalDate dataUltimoLogin = LocalDate.now();
 
-    private Set<Integer> tipoUsuario = new HashSet<>();
+    private final Set<Integer> tipoUsuario = new HashSet<>();
 
     public AdministradorDTO() {
     }
@@ -50,9 +51,13 @@ public class AdministradorDTO {
         this.senha = administrador.getSenha();
         this.nome = administrador.getNome();
         this.nomeEmpresa = administrador.getNomeEmpresa();
-        this.dataCadastro = administrador.getDataCadastro();
-        this.dataUltimoLogin = administrador.getDataUltimoLogin();
-        this.tipoUsuario.stream().map(TipoUsuario::toEnum).collect(Collectors.toSet());
+        this.dataCadastro = LocalDate.now();
+        this.dataUltimoLogin = LocalDate.now();
+
+        // Aqui corrigimos a conversão para o campo tipoUsuario.
+        administrador.getTipoUsuario().forEach(tipo ->
+                this.tipoUsuario.add(tipo)
+        );
     }
 
     public Long getId() {
@@ -111,10 +116,8 @@ public class AdministradorDTO {
         this.dataUltimoLogin = dataUltimoLogin;
     }
 
+    @JsonProperty("tipoUsuario")
     public Set<TipoUsuario> getTipoUsuario() {
-        if (tipoUsuario == null) {
-            return Collections.emptySet();
-        }
         return tipoUsuario.stream()
                 .map(TipoUsuario::toEnum)
                 .collect(Collectors.toSet());
