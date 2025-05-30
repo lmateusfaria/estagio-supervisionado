@@ -496,3 +496,26 @@
         usuario_tipo t1_0 
     where
         t1_0.usuario_id=?
+2025-05-30T12:52:46.139-03:00 DEBUG 21828 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        a1_0.usuario_id,
+        a1_1.data_cadastro,
+        a1_1.data_ultimo_login,
+        a1_1.id,
+        a1_1.email,
+        a1_1.nome,
+        a1_1.nome_empresa,
+        a1_1.senha 
+    from
+        administradores a1_0 
+    join
+        usuarios a1_1 
+            on a1_0.usuario_id=a1_1.id
+2025-05-30T12:52:46.144-03:00 DEBUG 21828 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
