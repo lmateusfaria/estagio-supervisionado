@@ -51,6 +51,15 @@ public class AdministradorResource {
         return ResponseEntity.ok().body(new UsuarioDTO(obj));
     }
 
+    @DeleteMapping(value = "/excluirUsuario/{id}")
+    public ResponseEntity<UsuarioDTO> excluirUsuario(
+            @Parameter(description = "ID do usuario a ser removido", example = "1", required = true)
+            @PathVariable Long id
+    ){
+        usuarioService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
     @Operation(summary = "Busca um administrador por ID", description = "Retorna as informações específicas de um administrador através do ID.")
     @GetMapping(value = "/{id}")
     public ResponseEntity<AdministradorDTO> findById(

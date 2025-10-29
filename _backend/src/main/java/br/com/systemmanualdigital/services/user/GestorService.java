@@ -20,6 +20,8 @@ import java.util.stream.Collectors;
 public class GestorService {
     @Autowired
     private GestorRepository gestorRepo;
+    @Autowired
+    private br.com.systemmanualdigital.repositories.user.UsuarioRepository usuarioRepository;
 
     public List<GestorDTO> findAll(){
         //retorna uma lista de GestorDTO
@@ -46,14 +48,16 @@ public class GestorService {
     public Gestor create(GestorDTO objDto){
         objDto.setId(null);
         validaGestor(objDto);
-        Gestor obj = new Gestor(objDto);
+        var gestorUsuario = objDto.getGestorId() != null ? usuarioRepository.findById(objDto.getGestorId()).orElse(null) : null;
+        Gestor obj = new Gestor(objDto, gestorUsuario);
         return gestorRepo.save(obj);
     }
 
     public Gestor update(Long id, GestorDTO objDto){
         objDto.setId(id);
         Gestor oldObj = findbyId(id);
-        oldObj = new Gestor(objDto);
+        var gestorUsuario = objDto.getGestorId() != null ? usuarioRepository.findById(objDto.getGestorId()).orElse(null) : null;
+        oldObj = new Gestor(objDto, gestorUsuario);
         return gestorRepo.save(oldObj);
     }
 
@@ -65,7 +69,7 @@ public class GestorService {
         if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Gestor não pode ser deletado! Possui documento vinculado.");
         }
-        if (!obj.getFluxoDocumentos().isEmpty()){
+        if (!obj.getFluxosCriados().isEmpty()){
             throw new DataIntegrityViolationException("Gestor não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 

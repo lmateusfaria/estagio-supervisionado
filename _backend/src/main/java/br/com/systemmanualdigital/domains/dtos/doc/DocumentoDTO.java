@@ -7,6 +7,7 @@ import br.com.systemmanualdigital.domains.enums.StatusDocumento;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
 public class DocumentoDTO {
 
     private Long id;
@@ -17,6 +18,14 @@ public class DocumentoDTO {
     private List<Long> campos;
     private Long idCriador;
     private String nomeCriador;
+    private Long idFluxo; // novo campo para associação
+    public Long getIdFluxo() {
+        return idFluxo;
+    }
+
+    public void setIdFluxo(Long idFluxo) {
+        this.idFluxo = idFluxo;
+    }
 
     public DocumentoDTO() {
     }

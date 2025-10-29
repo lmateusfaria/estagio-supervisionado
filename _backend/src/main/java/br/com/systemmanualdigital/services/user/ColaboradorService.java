@@ -4,9 +4,9 @@ package br.com.systemmanualdigital.services.user;
 import br.com.systemmanualdigital.domains.dtos.user.ColaboradorDTO;
 import br.com.systemmanualdigital.domains.dtos.user.ColaboradorDTO;
 import br.com.systemmanualdigital.domains.user.Colaborador;
-import br.com.systemmanualdigital.domains.user.Gestor;
+// ...existing imports...
 import br.com.systemmanualdigital.repositories.user.ColaboradorRepository;
-import br.com.systemmanualdigital.repositories.user.GestorRepository;
+// ...existing imports...
 import br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -20,8 +20,9 @@ import java.util.stream.Collectors;
 public class ColaboradorService {
     @Autowired
     private ColaboradorRepository colaboradorRepo;
+    // GestorRepository no longer required; we resolve gestores via UsuarioRepository
     @Autowired
-    private GestorRepository gestorRepository;
+    private br.com.systemmanualdigital.repositories.user.UsuarioRepository usuarioRepository;
 
     public List<ColaboradorDTO> findAll(){
         //retorna uma lista de ColaboradorDTO
@@ -48,10 +49,11 @@ public class ColaboradorService {
     public Colaborador create(ColaboradorDTO objDto){
         objDto.setId(null);
         validaColaborador(objDto);
-        Gestor gestor = gestorRepository.findById(objDto.getGestorId())
-                .orElseThrow(() -> new RuntimeException("Gestor não encontrado!"));
 
-        Colaborador obj = new Colaborador(objDto, gestor);
+    var usuarioGestor = usuarioRepository.findById(objDto.getGestorId())
+        .orElseThrow(() -> new RuntimeException("Gestor (usuário) não encontrado!"));
+
+    Colaborador obj = new Colaborador(objDto, usuarioGestor);
         return colaboradorRepo.save(obj);
     }
 
@@ -61,9 +63,9 @@ public class ColaboradorService {
         if(oldObj.getGestor().getId() != objDto.getGestorId()){
             throw new RuntimeException("Gestor não pode alterar esse Colaborador!");
         }
-        Gestor gestor = gestorRepository.findById(objDto.getGestorId())
-                .orElseThrow(() -> new RuntimeException("Gestor não encontrado!"));
-        oldObj = new Colaborador(objDto, gestor);
+        var usuarioGestor = usuarioRepository.findById(objDto.getGestorId())
+                .orElseThrow(() -> new RuntimeException("Gestor (usuário) não encontrado!"));
+        oldObj = new Colaborador(objDto, usuarioGestor);
         return colaboradorRepo.save(oldObj);
     }
 
@@ -72,7 +74,7 @@ public class ColaboradorService {
         if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Colaborador não pode ser deletado! Possui documento vinculado.");
         }
-        if (!obj.getFluxoDocumentos().isEmpty()){
+        if (!obj.getFluxosCriados().isEmpty()){
             throw new DataIntegrityViolationException("Colaborador não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 

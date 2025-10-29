@@ -33,19 +33,26 @@ public class FluxoDocumentos {
     @OneToMany(mappedBy = "fluxoDocumentos")
     private List<Documento> documentos = new ArrayList<>();
 
-    @ManyToOne//relacao de * para 1
-    @JoinColumn(name="idUsuario")
-    private Usuario usuario;
+
+    @ManyToOne
+    @JoinColumn(name = "criado_por_id")
+    private Usuario criadoPor;
+
+    @ManyToOne
+    @JoinColumn(name = "atualizado_por_id")
+    private Usuario atualizadoPor;
 
     public FluxoDocumentos() {
     }
 
-    public FluxoDocumentos(Long id, String nome, String descricaoFluxo, Integer versaoDoc, Usuario usuario) {
+
+    public FluxoDocumentos(Long id, String nome, String descricaoFluxo, Integer versaoDoc, Usuario criadoPor, Usuario atualizadoPor) {
         this.id = id;
         this.nome = nome;
         this.descricaoFluxo = descricaoFluxo;
         this.versaoDoc = versaoDoc;
-        this.usuario = usuario;
+        this.criadoPor = criadoPor;
+        this.atualizadoPor = atualizadoPor;
     }
 
 
@@ -89,11 +96,20 @@ public class FluxoDocumentos {
         this.documentos = documentos;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+
+    public Usuario getCriadoPor() {
+        return criadoPor;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setCriadoPor(Usuario criadoPor) {
+        this.criadoPor = criadoPor;
+    }
+
+    public Usuario getAtualizadoPor() {
+        return atualizadoPor;
+    }
+
+    public void setAtualizadoPor(Usuario atualizadoPor) {
+        this.atualizadoPor = atualizadoPor;
     }
 }

@@ -17,6 +17,8 @@ public class DocumentoResource {
 
     @Autowired
     private DocumentoService documentoService;
+    @Autowired
+    private br.com.systemmanualdigital.services.doc.CampoService campoService;
 
     @GetMapping
     public ResponseEntity<List<DocumentoDTO>> findAll() {
@@ -46,5 +48,12 @@ public class DocumentoResource {
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         documentoService.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{id}/campos")
+    public ResponseEntity<java.util.List<br.com.systemmanualdigital.domains.dtos.doc.CampoDTO>> findCamposByDocumento(@PathVariable Long id) {
+        return ResponseEntity.ok().body(
+                campoService.findByDocumentoId(id)
+        );
     }
 }

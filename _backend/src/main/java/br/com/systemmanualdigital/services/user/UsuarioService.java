@@ -62,7 +62,7 @@ public class UsuarioService {
         if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Usuario não pode ser deletado! Possui documento vinculado.");
         }
-        if (!obj.getFluxoDocumentos().isEmpty()){
+        if (!obj.getFluxosCriados().isEmpty()){
             throw new DataIntegrityViolationException("Usuario não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 

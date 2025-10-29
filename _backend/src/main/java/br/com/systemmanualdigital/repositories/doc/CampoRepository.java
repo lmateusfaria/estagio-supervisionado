@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CampoRepository extends JpaRepository<Campo, Long> {
     // Caso necessário, implementar métodos de busca customizados
+    java.util.List<Campo> findByDocumentoId(Long documentoId);
 }

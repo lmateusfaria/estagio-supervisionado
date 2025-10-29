@@ -8,6 +8,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -19,6 +21,7 @@ import java.util.stream.Collectors;
 @PrimaryKeyJoinColumn(name = "usuario_id")  // Chave estrangeira para a tabela "persons"
 
 public class Administrador extends Usuario {
+    // gestor is inherited from Usuario (no duplicate mapping)
 
     public Administrador() {
         super();

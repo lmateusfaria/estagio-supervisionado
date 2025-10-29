@@ -1,91 +1,94 @@
-2025-05-30T12:50:12.988-03:00  INFO 21828 --- [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 21828 (C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Trabalho Estagio\estagio-supervisionado\_backend)
-2025-05-30T12:50:13.014-03:00  INFO 21828 --- [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "dev"
-2025-05-30T12:50:13.246-03:00  INFO 21828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-30T12:50:13.246-03:00  INFO 21828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-30T12:50:14.550-03:00  INFO 21828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-30T12:50:14.763-03:00  INFO 21828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 7 JPA repository interfaces.
-2025-05-30T12:50:16.550-03:00  INFO 21828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2025-05-30T12:50:16.568-03:00  INFO 21828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-30T12:50:16.568-03:00  INFO 21828 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2025-05-30T12:50:16.692-03:00  INFO 21828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-30T12:50:16.693-03:00  INFO 21828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3443 ms
-2025-05-30T12:50:16.752-03:00  INFO 21828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-30T12:50:17.094-03:00  INFO 21828 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@595c5d9f
-2025-05-30T12:50:17.099-03:00  INFO 21828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-30T12:50:17.121-03:00  INFO 21828 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/bdsmd'
-2025-05-30T12:50:17.487-03:00  INFO 21828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-30T12:50:17.650-03:00  INFO 21828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2025-05-30T12:50:17.655-03:00  INFO 21828 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2025-05-30T12:50:18.128-03:00  INFO 21828 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2025-05-30T12:50:18.534-03:00  INFO 21828 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-30T12:50:18.870-03:00  WARN 21828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 9.5.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.0.0. Check the community dialects project for available legacy versions.
-2025-05-30T12:50:19.737-03:00  INFO 21828 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2025-05-30T12:50:23.599-03:00  INFO 21828 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-05-30T12:50:23.663-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:10.081-03:00  INFO 14436 --- [restartedMain] b.c.s.SMD.SmdApplication                 : Starting SmdApplication using Java 21.0.6 with PID 14436 (C:\Users\User\Desktop\Luis Mateus\Trabalho Estagio\estagio-supervisionado\_backend\target\classes started by User in C:\Users\User\Desktop\Luis Mateus\Trabalho Estagio\estagio-supervisionado\_backend)
+2025-10-22T20:53:10.121-03:00  INFO 14436 --- [restartedMain] b.c.s.SMD.SmdApplication                 : The following 1 profile is active: "dev"
+2025-10-22T20:53:10.753-03:00  INFO 14436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-22T20:53:10.756-03:00  INFO 14436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-22T20:53:14.564-03:00  INFO 14436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-22T20:53:14.895-03:00  INFO 14436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 302 ms. Found 7 JPA repository interfaces.
+2025-10-22T20:53:19.459-03:00  INFO 14436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-10-22T20:53:19.503-03:00  INFO 14436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-22T20:53:19.504-03:00  INFO 14436 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2025-10-22T20:53:19.913-03:00  INFO 14436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-22T20:53:19.914-03:00  INFO 14436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9151 ms
+2025-10-22T20:53:20.167-03:00  INFO 14436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-22T20:53:21.057-03:00  INFO 14436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5af8b915
+2025-10-22T20:53:21.066-03:00  INFO 14436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-22T20:53:21.105-03:00  INFO 14436 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/bdsmd'
+2025-10-22T20:53:21.730-03:00  INFO 14436 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-22T20:53:22.090-03:00  INFO 14436 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2025-10-22T20:53:22.101-03:00  INFO 14436 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-10-22T20:53:22.840-03:00  INFO 14436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-10-22T20:53:23.548-03:00  INFO 14436 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-22T20:53:23.892-03:00  WARN 14436 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 9.5.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 10.0.0. Check the community dialects project for available legacy versions.
+2025-10-22T20:53:25.301-03:00  INFO 14436 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2025-10-22T20:53:29.236-03:00  INFO 14436 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-10-22T20:53:29.337-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists administradores 
        drop constraint if exists FK39dd1lon1to4ofwlcxf73gahm
-2025-05-30T12:50:23.715-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.367-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists campos 
        drop constraint if exists FK2mn0l4hf72c8hq2vkbl46eahf
-2025-05-30T12:50:23.718-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists colaboradores 
-       drop constraint if exists FK7rho2cx1yfw12p2th6gswjbag
-2025-05-30T12:50:23.720-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.371-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists colaboradores 
        drop constraint if exists FKjielvikoh3oau1iha0w235mtx
-2025-05-30T12:50:23.722-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.376-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists documentos 
        drop constraint if exists FK71hxikm4dpc908a49sctqdgat
-2025-05-30T12:50:23.724-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.379-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists documentos 
        drop constraint if exists FKcny7xvqx9y6towx2g3wq0c9c3
-2025-05-30T12:50:23.726-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.383-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists fluxo_documentos 
-       drop constraint if exists FKl1b2u0p5hxs09s1iaflov39kb
-2025-05-30T12:50:23.728-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+       drop constraint if exists FK4jjl0hndfvf2op105wwfdek95
+2025-10-22T20:53:29.387-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists fluxo_documentos 
+       drop constraint if exists FK78jwbppnl1tr67djr18a9os40
+2025-10-22T20:53:29.390-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists gestores 
        drop constraint if exists FK689x3ny3yse1dswgxlfeailx5
-2025-05-30T12:50:23.730-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.394-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists usuario_tipo 
        drop constraint if exists FKatx6j8whs5rh1hlxlvu2f08lv
-2025-05-30T12:50:23.732-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.400-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists usuarios 
+       drop constraint if exists FK9vwepo75gobi8ftspcjhju1rd
+2025-10-22T20:53:29.404-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists administradores cascade
-2025-05-30T12:50:23.751-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.423-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists campos cascade
-2025-05-30T12:50:23.762-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.443-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists colaboradores cascade
-2025-05-30T12:50:23.769-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.504-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists documentos cascade
-2025-05-30T12:50:23.781-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.596-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists fluxo_documentos cascade
-2025-05-30T12:50:23.790-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.616-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists gestores cascade
-2025-05-30T12:50:23.796-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.634-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists usuario_tipo cascade
-2025-05-30T12:50:23.800-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.640-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop table if exists usuarios cascade
-2025-05-30T12:50:23.811-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.770-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_campo
-2025-05-30T12:50:23.814-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.780-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_documento
-2025-05-30T12:50:23.818-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.785-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_fluxodocumentos
-2025-05-30T12:50:23.822-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.790-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_usuarios
-2025-05-30T12:50:23.837-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.812-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_campo start with 1 increment by 50
-2025-05-30T12:50:23.902-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.883-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_documento start with 1 increment by 50
-2025-05-30T12:50:23.909-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.905-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_fluxodocumentos start with 1 increment by 50
-2025-05-30T12:50:23.917-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.915-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_usuarios start with 1 increment by 50
-2025-05-30T12:50:23.978-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.936-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table administradores (
         usuario_id bigint not null,
         primary key (usuario_id)
     )
-2025-05-30T12:50:24.009-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:29.966-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table campos (
         pagina integer not null,
         posicaox numeric(38,2) not null,
@@ -96,13 +99,13 @@
         nome varchar(255) not null,
         primary key (id)
     )
-2025-05-30T12:50:24.037-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.065-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table colaboradores (
-        id_gestor bigint not null,
+        id_gestor bigint,
         usuario_id bigint not null,
         primary key (usuario_id)
     )
-2025-05-30T12:50:24.055-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.108-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table documentos (
         status_documento smallint check (status_documento between 0 and 3),
         versao_doc integer not null,
@@ -113,244 +116,236 @@
         nome varchar(255) not null,
         primary key (id)
     )
-2025-05-30T12:50:24.096-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.145-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table fluxo_documentos (
         versao_doc integer not null,
+        atualizado_por_id bigint,
+        criado_por_id bigint,
         id bigint not null,
-        id_usuario bigint,
         descricao_fluxo varchar(255) not null,
         nome varchar(255) not null,
         primary key (id)
     )
-2025-05-30T12:50:24.133-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.175-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table gestores (
         usuario_id bigint not null,
         primary key (usuario_id)
     )
-2025-05-30T12:50:24.154-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.188-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table usuario_tipo (
         tipo_usuario_id integer,
         usuario_id bigint not null
     )
-2025-05-30T12:50:24.161-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.194-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     create table usuarios (
         data_cadastro date,
         data_ultimo_login date,
         id bigint not null,
+        id_gestor bigint,
         email varchar(255) not null,
         nome varchar(255) not null,
         nome_empresa varchar(255) not null,
         senha varchar(255) not null,
         primary key (id)
     )
-2025-05-30T12:50:24.189-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.221-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists administradores 
        add constraint FK39dd1lon1to4ofwlcxf73gahm 
        foreign key (usuario_id) 
        references usuarios
-2025-05-30T12:50:24.205-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.239-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists campos 
        add constraint FK2mn0l4hf72c8hq2vkbl46eahf 
        foreign key (documento_id) 
        references documentos
-2025-05-30T12:50:24.210-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
-    alter table if exists colaboradores 
-       add constraint FK7rho2cx1yfw12p2th6gswjbag 
-       foreign key (id_gestor) 
-       references gestores
-2025-05-30T12:50:24.214-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.246-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists colaboradores 
        add constraint FKjielvikoh3oau1iha0w235mtx 
        foreign key (usuario_id) 
        references usuarios
-2025-05-30T12:50:24.218-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.253-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists documentos 
        add constraint FK71hxikm4dpc908a49sctqdgat 
        foreign key (id_fluxo_documentos) 
        references fluxo_documentos
-2025-05-30T12:50:24.222-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.258-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists documentos 
        add constraint FKcny7xvqx9y6towx2g3wq0c9c3 
        foreign key (idusuario) 
        references usuarios
-2025-05-30T12:50:24.225-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.264-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists fluxo_documentos 
-       add constraint FKl1b2u0p5hxs09s1iaflov39kb 
-       foreign key (id_usuario) 
+       add constraint FK4jjl0hndfvf2op105wwfdek95 
+       foreign key (atualizado_por_id) 
        references usuarios
-2025-05-30T12:50:24.229-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.269-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists fluxo_documentos 
+       add constraint FK78jwbppnl1tr67djr18a9os40 
+       foreign key (criado_por_id) 
+       references usuarios
+2025-10-22T20:53:30.275-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists gestores 
        add constraint FK689x3ny3yse1dswgxlfeailx5 
        foreign key (usuario_id) 
        references usuarios
-2025-05-30T12:50:24.238-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.281-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     alter table if exists usuario_tipo 
        add constraint FKatx6j8whs5rh1hlxlvu2f08lv 
        foreign key (usuario_id) 
        references usuarios
-2025-05-30T12:50:24.249-03:00  INFO 21828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-30T12:50:27.467-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:30.287-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists usuarios 
+       add constraint FK9vwepo75gobi8ftspcjhju1rd 
+       foreign key (id_gestor) 
+       references usuarios
+2025-10-22T20:53:30.332-03:00  INFO 14436 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-22T20:53:33.777-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_usuarios')
-2025-05-30T12:50:27.657-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:33.998-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuarios
-        (data_cadastro,data_ultimo_login,email,nome,nome_empresa,senha,id) 
+        (data_cadastro,data_ultimo_login,email,id_gestor,nome,nome_empresa,senha,id) 
     values
-        (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.671-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?)
+2025-10-22T20:53:34.031-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         administradores
         (usuario_id) 
     values
         (?)
-2025-05-30T12:50:27.693-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.064-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.696-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.068-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.698-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.071-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.709-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.084-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_usuarios')
-2025-05-30T12:50:27.712-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.089-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuarios
-        (data_cadastro,data_ultimo_login,email,nome,nome_empresa,senha,id) 
+        (data_cadastro,data_ultimo_login,email,id_gestor,nome,nome_empresa,senha,id) 
     values
-        (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.714-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?)
+2025-10-22T20:53:34.092-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         gestores
         (usuario_id) 
     values
         (?)
-2025-05-30T12:50:27.718-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.097-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.720-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.099-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.725-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.106-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuarios
-        (data_cadastro,data_ultimo_login,email,nome,nome_empresa,senha,id) 
+        (data_cadastro,data_ultimo_login,email,id_gestor,nome,nome_empresa,senha,id) 
     values
-        (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.727-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?,?,?)
+2025-10-22T20:53:34.108-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         colaboradores
-        (id_gestor,usuario_id) 
+        (usuario_id) 
     values
-        (?,?)
-2025-05-30T12:50:27.732-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+        (?)
+2025-10-22T20:53:34.113-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         usuario_tipo
         (usuario_id,tipo_usuario_id) 
     values
         (?,?)
-2025-05-30T12:50:27.736-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.117-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_fluxodocumentos')
-2025-05-30T12:50:27.740-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.122-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         fluxo_documentos
-        (descricao_fluxo,nome,id_usuario,versao_doc,id) 
+        (atualizado_por_id,criado_por_id,descricao_fluxo,nome,versao_doc,id) 
     values
-        (?,?,?,?,?)
-2025-05-30T12:50:27.746-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+        (?,?,?,?,?,?)
+2025-10-22T20:53:34.128-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_documento')
-2025-05-30T12:50:27.751-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.133-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         documentos
         (arquivo,id_fluxo_documentos,nome,status_documento,idusuario,versao_doc,id) 
     values
         (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.756-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.139-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_campo')
-2025-05-30T12:50:27.761-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.144-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         campos
         (conteudo,documento_id,nome,pagina,posicaox,posicaoy,id) 
     values
         (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.769-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.152-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     select
         nextval('seq_campo')
-2025-05-30T12:50:27.771-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.155-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         campos
         (conteudo,documento_id,nome,pagina,posicaox,posicaoy,id) 
     values
         (?,?,?,?,?,?,?)
-2025-05-30T12:50:27.776-03:00 DEBUG 21828 --- [restartedMain] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.161-03:00 DEBUG 14436 --- [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         campos
         (conteudo,documento_id,nome,pagina,posicaox,posicaoy,id) 
     values
         (?,?,?,?,?,?,?)
-2025-05-30T12:50:28.408-03:00  WARN 21828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-30T12:50:34.668-03:00  INFO 21828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-30T12:50:34.815-03:00  INFO 21828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2025-05-30T12:50:34.874-03:00  INFO 21828 --- [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 22.994 seconds (process running for 36.776)
-2025-05-30T12:50:57.367-03:00  INFO 21828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-30T12:50:57.368-03:00  INFO 21828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-30T12:50:57.371-03:00  INFO 21828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-05-30T12:50:57.710-03:00 DEBUG 21828 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+2025-10-22T20:53:34.837-03:00  WARN 14436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-22T20:53:36.576-03:00  INFO 14436 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57f59444, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2916176b, org.springframework.security.web.context.SecurityContextHolderFilter@20624007, org.springframework.security.web.header.HeaderWriterFilter@3e3acf5d, org.springframework.web.filter.CorsFilter@3feb813c, org.springframework.security.web.authentication.logout.LogoutFilter@58343d39, br.com.systemmanualdigital.security.JWTAuthenticationFilter@58b25d08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ef32866, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ab9475f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@239ea5ee, org.springframework.security.web.session.SessionManagementFilter@635cce7a, org.springframework.security.web.access.ExceptionTranslationFilter@70a11314, org.springframework.security.web.access.intercept.AuthorizationFilter@23fbacd5]
+2025-10-22T20:53:38.202-03:00  INFO 14436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-22T20:53:38.388-03:00  INFO 14436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-10-22T20:53:38.475-03:00  INFO 14436 --- [restartedMain] b.c.s.SMD.SmdApplication                 : Started SmdApplication in 31.209 seconds (process running for 38.903)
+2025-10-22T20:56:45.168-03:00  INFO 14436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22T20:56:45.169-03:00  INFO 14436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-22T20:56:45.174-03:00  INFO 14436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-10-22T20:56:46.607-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
     select
-        c1_0.id,
-        c1_0.conteudo,
-        c1_0.documento_id,
-        c1_0.nome,
-        c1_0.pagina,
-        c1_0.posicaox,
-        c1_0.posicaoy 
-    from
-        campos c1_0
-2025-05-30T12:50:57.742-03:00 DEBUG 21828 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
-    select
-        d1_0.id,
-        d1_0.arquivo,
-        f1_0.id,
-        f1_0.descricao_fluxo,
-        f1_0.nome,
         u1_0.id,
         case 
             when u1_1.usuario_id is not null then 1 
@@ -361,53 +356,13 @@
         u1_0.data_cadastro,
         u1_0.data_ultimo_login,
         u1_0.email,
+        u1_0.id_gestor,
         u1_0.nome,
         u1_0.nome_empresa,
         u1_0.senha,
-        u1_2.id_gestor,
-        g1_0.usuario_id,
-        g1_1.data_cadastro,
-        g1_1.data_ultimo_login,
-        g1_1.email,
-        g1_1.nome,
-        g1_1.nome_empresa,
-        g1_1.senha,
-        g1_1.id,
-        u1_3.usuario_id,
-        f1_0.versao_doc,
-        d1_0.nome,
-        d1_0.status_documento,
-        u2_0.id,
-        case 
-            when u2_1.usuario_id is not null then 1 
-            when u2_2.usuario_id is not null then 2 
-            when u2_3.usuario_id is not null then 3 
-            when u2_0.id is not null then 0 
-        end,
-        u2_0.data_cadastro,
-        u2_0.data_ultimo_login,
-        u2_0.email,
-        u2_0.nome,
-        u2_0.nome_empresa,
-        u2_0.senha,
-        u2_2.id_gestor,
-        g2_0.usuario_id,
-        g2_1.data_cadastro,
-        g2_1.data_ultimo_login,
-        g2_1.email,
-        g2_1.nome,
-        g2_1.nome_empresa,
-        g2_1.senha,
-        g2_1.id,
-        u2_3.usuario_id,
-        d1_0.versao_doc 
+        u1_3.usuario_id 
     from
-        documentos d1_0 
-    left join
-        fluxo_documentos f1_0 
-            on f1_0.id=d1_0.id_fluxo_documentos 
-    left join
-        (usuarios u1_0 
+        usuarios u1_0 
     left join
         administradores u1_1 
             on u1_0.id=u1_1.usuario_id 
@@ -416,35 +371,10 @@
             on u1_0.id=u1_2.usuario_id 
     left join
         gestores u1_3 
-            on u1_0.id=u1_3.usuario_id) 
-                on u1_0.id=f1_0.id_usuario 
-        left join
-            (gestores g1_0 
-        join
-            usuarios g1_1 
-                on g1_0.usuario_id=g1_1.id) 
-                    on g1_0.usuario_id=u1_2.id_gestor 
-            left join
-                (usuarios u2_0 
-            left join
-                administradores u2_1 
-                    on u2_0.id=u2_1.usuario_id 
-            left join
-                colaboradores u2_2 
-                    on u2_0.id=u2_2.usuario_id 
-            left join
-                gestores u2_3 
-                    on u2_0.id=u2_3.usuario_id) 
-                        on u2_0.id=d1_0.idusuario 
-                left join
-                    (gestores g2_0 
-                join
-                    usuarios g2_1 
-                        on g2_0.usuario_id=g2_1.id) 
-                            on g2_0.usuario_id=u2_2.id_gestor 
-                    where
-                        d1_0.id=?
-2025-05-30T12:51:24.189-03:00 DEBUG 21828 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:04.484-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
     select
         u1_0.id,
         case 
@@ -456,10 +386,220 @@
         u1_0.data_cadastro,
         u1_0.data_ultimo_login,
         u1_0.email,
+        u1_0.id_gestor,
         u1_0.nome,
         u1_0.nome_empresa,
         u1_0.senha,
-        u1_2.id_gestor,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:04.718-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:05.502-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:05.527-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:06.037-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:06.055-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:18.028-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:18.088-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
         u1_3.usuario_id 
     from
         usuarios u1_0 
@@ -472,7 +612,7 @@
     left join
         gestores u1_3 
             on u1_0.id=u1_3.usuario_id
-2025-05-30T12:51:24.202-03:00 DEBUG 21828 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+2025-10-22T20:57:18.116-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         t1_0.usuario_id,
         t1_0.tipo_usuario_id 
@@ -480,7 +620,7 @@
         usuario_tipo t1_0 
     where
         t1_0.usuario_id=?
-2025-05-30T12:51:24.208-03:00 DEBUG 21828 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+2025-10-22T20:57:18.124-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         t1_0.usuario_id,
         t1_0.tipo_usuario_id 
@@ -488,7 +628,7 @@
         usuario_tipo t1_0 
     where
         t1_0.usuario_id=?
-2025-05-30T12:51:24.210-03:00 DEBUG 21828 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+2025-10-22T20:57:18.128-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         t1_0.usuario_id,
         t1_0.tipo_usuario_id 
@@ -496,22 +636,3504 @@
         usuario_tipo t1_0 
     where
         t1_0.usuario_id=?
-2025-05-30T12:52:46.139-03:00 DEBUG 21828 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+2025-10-22T20:57:18.366-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
     select
-        a1_0.usuario_id,
-        a1_1.data_cadastro,
-        a1_1.data_ultimo_login,
-        a1_1.id,
-        a1_1.email,
-        a1_1.nome,
-        a1_1.nome_empresa,
-        a1_1.senha 
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
     from
-        administradores a1_0 
-    join
-        usuarios a1_1 
-            on a1_0.usuario_id=a1_1.id
-2025-05-30T12:52:46.144-03:00 DEBUG 21828 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:18.934-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:57:18.942-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:18.945-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:18.948-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:45.401-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:45.417-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:57:45.434-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:45.437-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:45.442-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:47.470-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:45.743-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:48.425-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:57:48.443-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:48.485-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:48.506-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:57:48.520-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:49.079-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:57:49.087-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:49.102-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:49.105-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.634-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:52.656-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:57:52.670-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.673-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.680-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.730-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:57:52.740-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:57:52.752-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.755-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:57:52.757-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:58:00.074-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:00.196-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:58:00.224-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        d1_0.idusuario,
+        d1_0.id,
+        d1_0.arquivo,
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    left join
+        fluxo_documentos f1_0 
+            on f1_0.id=d1_0.id_fluxo_documentos 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        d1_0.idusuario=?
+2025-10-22T20:58:00.264-03:00 ERROR 14436 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: Usuario não pode ser deletado! Possui documento vinculado.] with root cause
+
+org.springframework.dao.DataIntegrityViolationException: Usuario não pode ser deletado! Possui documento vinculado.
+	at br.com.systemmanualdigital.services.user.UsuarioService.delete(UsuarioService.java:63) ~[classes/:na]
+	at br.com.systemmanualdigital.resources.user.AdministradorResource.excluirUsuario(AdministradorResource.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at br.com.systemmanualdigital.security.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:36) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-22T20:58:07.376-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:07.405-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:58:07.895-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        d1_0.idusuario,
+        d1_0.id,
+        d1_0.arquivo,
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    left join
+        fluxo_documentos f1_0 
+            on f1_0.id=d1_0.id_fluxo_documentos 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        d1_0.idusuario=?
+2025-10-22T20:58:07.915-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.criado_por_id,
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            where
+                f1_0.criado_por_id=?
+2025-10-22T20:58:07.978-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuario_tipo 
+    where
+        usuario_id=?
+2025-10-22T20:58:08.003-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    delete 
+    from
+        colaboradores 
+    where
+        usuario_id=?
+2025-10-22T20:58:08.008-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    delete 
+    from
+        usuarios 
+    where
+        id=?
+2025-10-22T20:58:13.235-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:13.254-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:58:13.266-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:58:13.485-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:13.502-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:58:13.506-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:58:20.478-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:20.499-03:00 DEBUG 14436 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:21.134-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:21.155-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:27.281-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:27.316-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.arquivo,
+        d1_0.id_fluxo_documentos,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.idusuario,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    where
+        d1_0.id_fluxo_documentos=?
+2025-10-22T20:58:27.324-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:27.693-03:00 DEBUG 14436 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.documento_id,
+        c1_0.id,
+        c1_0.conteudo,
+        c1_0.nome,
+        c1_0.pagina,
+        c1_0.posicaox,
+        c1_0.posicaoy 
+    from
+        campos c1_0 
+    where
+        c1_0.documento_id=?
+2025-10-22T20:58:28.437-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:28.463-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.arquivo,
+        d1_0.id_fluxo_documentos,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.idusuario,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    where
+        d1_0.id_fluxo_documentos=?
+2025-10-22T20:58:28.476-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:28.500-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.documento_id,
+        c1_0.id,
+        c1_0.conteudo,
+        c1_0.nome,
+        c1_0.pagina,
+        c1_0.posicaox,
+        c1_0.posicaoy 
+    from
+        campos c1_0 
+    where
+        c1_0.documento_id=?
+2025-10-22T20:58:34.812-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:34.841-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.arquivo,
+        d1_0.id_fluxo_documentos,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.idusuario,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    where
+        d1_0.id_fluxo_documentos=?
+2025-10-22T20:58:34.846-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:38.010-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.documento_id,
+        c1_0.id,
+        c1_0.conteudo,
+        c1_0.nome,
+        c1_0.pagina,
+        c1_0.posicaox,
+        c1_0.posicaoy 
+    from
+        campos c1_0 
+    where
+        c1_0.documento_id=?
+2025-10-22T20:58:39.652-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:39.674-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        d1_0.id,
+        d1_0.arquivo,
+        d1_0.id_fluxo_documentos,
+        d1_0.nome,
+        d1_0.status_documento,
+        d1_0.idusuario,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    where
+        d1_0.id_fluxo_documentos=?
+2025-10-22T20:58:39.686-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:39.708-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.documento_id,
+        c1_0.id,
+        c1_0.conteudo,
+        c1_0.nome,
+        c1_0.pagina,
+        c1_0.posicaox,
+        c1_0.posicaoy 
+    from
+        campos c1_0 
+    where
+        c1_0.documento_id=?
+2025-10-22T20:58:43.449-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:43.464-03:00 DEBUG 14436 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:44.748-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:44.765-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:51.074-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:51.090-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        a1_0.id,
+        case 
+            when a1_1.usuario_id is not null then 1 
+            when a1_2.usuario_id is not null then 2 
+            when a1_3.usuario_id is not null then 3 
+            when a1_0.id is not null then 0 
+        end,
+        a1_0.data_cadastro,
+        a1_0.data_ultimo_login,
+        a1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        a1_0.nome,
+        a1_0.nome_empresa,
+        a1_0.senha,
+        a1_3.usuario_id,
+        c1_0.id,
+        case 
+            when c1_1.usuario_id is not null then 1 
+            when c1_2.usuario_id is not null then 2 
+            when c1_3.usuario_id is not null then 3 
+            when c1_0.id is not null then 0 
+        end,
+        c1_0.data_cadastro,
+        c1_0.data_ultimo_login,
+        c1_0.email,
+        g3_0.id,
+        case 
+            when g3_1.usuario_id is not null then 1 
+            when g3_2.usuario_id is not null then 2 
+            when g3_3.usuario_id is not null then 3 
+            when g3_0.id is not null then 0 
+        end,
+        g3_0.data_cadastro,
+        g3_0.data_ultimo_login,
+        g3_0.email,
+        g3_0.id_gestor,
+        g3_0.nome,
+        g3_0.nome_empresa,
+        g3_0.senha,
+        g3_3.usuario_id,
+        c1_0.nome,
+        c1_0.nome_empresa,
+        c1_0.senha,
+        c1_3.usuario_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0 
+    left join
+        (usuarios a1_0 
+    left join
+        administradores a1_1 
+            on a1_0.id=a1_1.usuario_id 
+    left join
+        colaboradores a1_2 
+            on a1_0.id=a1_2.usuario_id 
+    left join
+        gestores a1_3 
+            on a1_0.id=a1_3.usuario_id) 
+                on a1_0.id=f1_0.atualizado_por_id 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=a1_0.id_gestor 
+            left join
+                (usuarios c1_0 
+            left join
+                administradores c1_1 
+                    on c1_0.id=c1_1.usuario_id 
+            left join
+                colaboradores c1_2 
+                    on c1_0.id=c1_2.usuario_id 
+            left join
+                gestores c1_3 
+                    on c1_0.id=c1_3.usuario_id) 
+                        on c1_0.id=f1_0.criado_por_id 
+                left join
+                    (usuarios g3_0 
+                left join
+                    administradores g3_1 
+                        on g3_0.id=g3_1.usuario_id 
+                left join
+                    colaboradores g3_2 
+                        on g3_0.id=g3_2.usuario_id 
+                left join
+                    gestores g3_3 
+                        on g3_0.id=g3_3.usuario_id) 
+                            on g3_0.id=c1_0.id_gestor 
+                    where
+                        f1_0.id=?
+2025-10-22T20:58:51.109-03:00 DEBUG 14436 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        d1_0.id_fluxo_documentos,
+        d1_0.id,
+        d1_0.arquivo,
+        d1_0.nome,
+        d1_0.status_documento,
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id,
+        d1_0.versao_doc 
+    from
+        documentos d1_0 
+    left join
+        (usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id) 
+                on u1_0.id=d1_0.idusuario 
+        left join
+            (usuarios g1_0 
+        left join
+            administradores g1_1 
+                on g1_0.id=g1_1.usuario_id 
+        left join
+            colaboradores g1_2 
+                on g1_0.id=g1_2.usuario_id 
+        left join
+            gestores g1_3 
+                on g1_0.id=g1_3.usuario_id) 
+                    on g1_0.id=u1_0.id_gestor 
+            where
+                d1_0.id_fluxo_documentos=?
+2025-10-22T20:58:51.121-03:00 ERROR 14436 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: Fluxo de Documentos não pode ser deletado! Possui documento vinculado.] with root cause
+
+org.springframework.dao.DataIntegrityViolationException: Fluxo de Documentos não pode ser deletado! Possui documento vinculado.
+	at br.com.systemmanualdigital.services.flow.FluxoDocumentosService.delete(FluxoDocumentosService.java:79) ~[classes/:na]
+	at br.com.systemmanualdigital.resources.flow.FluxoDocumentosResource.delete(FluxoDocumentosResource.java:46) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at br.com.systemmanualdigital.security.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:36) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.3.jar:6.1.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-22T20:58:54.422-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:54.434-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:58:54.438-03:00 DEBUG 14436 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:58:56.341-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:58:56.351-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:58:56.355-03:00 DEBUG 14436 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:59:07.556-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:59:07.571-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:59:07.576-03:00 DEBUG 14436 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:59:07.984-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:59:07.998-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.atualizado_por_id,
+        f1_0.criado_por_id,
+        f1_0.descricao_fluxo,
+        f1_0.nome,
+        f1_0.versao_doc 
+    from
+        fluxo_documentos f1_0
+2025-10-22T20:59:08.003-03:00 DEBUG 14436 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        g1_0.id,
+        case 
+            when g1_1.usuario_id is not null then 1 
+            when g1_2.usuario_id is not null then 2 
+            when g1_3.usuario_id is not null then 3 
+            when g1_0.id is not null then 0 
+        end,
+        g1_0.data_cadastro,
+        g1_0.data_ultimo_login,
+        g1_0.email,
+        g1_0.id_gestor,
+        g1_0.nome,
+        g1_0.nome_empresa,
+        g1_0.senha,
+        g1_3.usuario_id,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    left join
+        (usuarios g1_0 
+    left join
+        administradores g1_1 
+            on g1_0.id=g1_1.usuario_id 
+    left join
+        colaboradores g1_2 
+            on g1_0.id=g1_2.usuario_id 
+    left join
+        gestores g1_3 
+            on g1_0.id=g1_3.usuario_id) 
+                on g1_0.id=u1_0.id_gestor 
+        where
+            u1_0.id=?
+2025-10-22T20:59:08.640-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:59:08.666-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:59:08.675-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:59:08.684-03:00 DEBUG 14436 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:59:08.954-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id 
+    where
+        upper(u1_0.email)=upper(?)
+2025-10-22T20:59:09.155-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        case 
+            when u1_1.usuario_id is not null then 1 
+            when u1_2.usuario_id is not null then 2 
+            when u1_3.usuario_id is not null then 3 
+            when u1_0.id is not null then 0 
+        end,
+        u1_0.data_cadastro,
+        u1_0.data_ultimo_login,
+        u1_0.email,
+        u1_0.id_gestor,
+        u1_0.nome,
+        u1_0.nome_empresa,
+        u1_0.senha,
+        u1_3.usuario_id 
+    from
+        usuarios u1_0 
+    left join
+        administradores u1_1 
+            on u1_0.id=u1_1.usuario_id 
+    left join
+        colaboradores u1_2 
+            on u1_0.id=u1_2.usuario_id 
+    left join
+        gestores u1_3 
+            on u1_0.id=u1_3.usuario_id
+2025-10-22T20:59:09.172-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        t1_0.usuario_id,
+        t1_0.tipo_usuario_id 
+    from
+        usuario_tipo t1_0 
+    where
+        t1_0.usuario_id=?
+2025-10-22T20:59:09.175-03:00 DEBUG 14436 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
     select
         t1_0.usuario_id,
         t1_0.tipo_usuario_id 

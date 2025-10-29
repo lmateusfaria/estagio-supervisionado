@@ -41,6 +41,8 @@ public class AdministradorDTO {
     private LocalDate dataUltimoLogin = LocalDate.now();
 
     private final Set<Integer> tipoUsuario = new HashSet<>();
+    private Long gestorId;
+    private String nomeGestor;
 
     public AdministradorDTO() {
     }
@@ -58,6 +60,10 @@ public class AdministradorDTO {
         administrador.getTipoUsuario().forEach(tipo ->
                 this.tipoUsuario.add(tipo)
         );
+        if (administrador.getGestor() != null) {
+            this.gestorId = administrador.getGestor().getId();
+            this.nomeGestor = administrador.getGestor().getNome();
+        }
     }
 
     public Long getId() {
@@ -125,6 +131,22 @@ public class AdministradorDTO {
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario.add(tipoUsuario.getId());
+    }
+
+    public Long getGestorId() {
+        return gestorId;
+    }
+
+    public void setGestorId(Long gestorId) {
+        this.gestorId = gestorId;
+    }
+
+    public String getNomeGestor() {
+        return nomeGestor;
+    }
+
+    public void setNomeGestor(String nomeGestor) {
+        this.nomeGestor = nomeGestor;
     }
 
 }

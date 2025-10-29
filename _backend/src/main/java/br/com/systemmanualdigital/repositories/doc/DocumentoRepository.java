@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DocumentoRepository extends JpaRepository<Documento, Long> {
-    // Caso necessário, implementar métodos de busca customizados
+    // Busca documentos por fluxo de documentos (relacionamento many-to-one)
+    java.util.List<Documento> findByFluxoDocumentosId(Long fluxoDocumentosId);
 }

@@ -27,6 +27,8 @@ public class Gestor extends Usuario {
     @OneToMany(mappedBy = "gestor") // "gestor" corresponde ao atributo no Colaborador
     private List<Colaborador> colaboradores = new ArrayList<>();
 
+    // gestor moved to base class Usuario
+
     public Gestor() {
         super();
         addTipoUsuario(TipoUsuario.COLABORADOR);
@@ -35,6 +37,13 @@ public class Gestor extends Usuario {
 
     public Gestor(Long id, String email, String senha, String nome, String nomeEmpresa) {
         super(id, email, senha, nome, nomeEmpresa);
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+        addTipoUsuario(TipoUsuario.GESTOR);
+    }
+
+    public Gestor(Long id, String email, String senha, String nome, String nomeEmpresa, Usuario gestor) {
+        super(id, email, senha, nome, nomeEmpresa);
+        this.setGestor(gestor);
         addTipoUsuario(TipoUsuario.COLABORADOR);
         addTipoUsuario(TipoUsuario.GESTOR);
     }
@@ -53,6 +62,21 @@ public class Gestor extends Usuario {
         addTipoUsuario(TipoUsuario.GESTOR);
     }
 
+    public Gestor(GestorDTO obj, Usuario gestor) {
+        this.id = obj.getId();
+        this.email = obj.getEmail();
+        this.senha = obj.getSenha();
+        this.nome = obj.getNome();
+        this.nomeEmpresa = obj.getNomeEmpresa();
+        this.dataCadastro = obj.getDataCadastro();
+        this.dataUltimoLogin = obj.getDataUltimoLogin();
+        this.tipoUsuario = obj.getTipoUsuario().stream()
+                .map(TipoUsuario::getId).collect(Collectors.toSet());
+        addTipoUsuario(TipoUsuario.COLABORADOR);
+        addTipoUsuario(TipoUsuario.GESTOR);
+        this.setGestor(gestor);
+    }
+
     public List<Colaborador> getColaboradores() {
         return colaboradores;
     }
@@ -60,4 +84,6 @@ public class Gestor extends Usuario {
     public void setColaboradores(List<Colaborador> colaboradores) {
         this.colaboradores = colaboradores;
     }
+
+    // gestor getter/setter inherited from Usuario
 }

@@ -46,4 +46,11 @@ public class FluxoDocumentosResource {
         fluxoService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping(value = "/{id}/documentos")
+    public ResponseEntity<java.util.List<br.com.systemmanualdigital.domains.dtos.doc.DocumentoDTO>> findDocumentosByFluxo(@PathVariable Long id) {
+        return ResponseEntity.ok().body(
+                fluxoService.findDocumentosByFluxoId(id)
+        );
+    }
 }

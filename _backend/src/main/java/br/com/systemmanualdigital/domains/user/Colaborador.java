@@ -22,23 +22,20 @@ import java.util.stream.Collectors;
 //@Setter
 public class Colaborador extends Usuario {
 
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "id_gestor", nullable = false) // Associando ao gestor
-    private Gestor gestor;
+    // gestor moved to base class Usuario
 
     public Colaborador() {
         super();
         addTipoUsuario(TipoUsuario.COLABORADOR);
     }
 
-    public Colaborador(Long id, String email, String senha, String nome, String nomeEmpresa, Gestor gestor) {
+    public Colaborador(Long id, String email, String senha, String nome, String nomeEmpresa, Usuario gestor) {
         super(id, email, senha, nome, nomeEmpresa);
-        this.gestor = gestor;
+        this.setGestor(gestor);
         addTipoUsuario(TipoUsuario.COLABORADOR);
     }
 
-    public Colaborador(ColaboradorDTO obj, Gestor gestor) {
+    public Colaborador(ColaboradorDTO obj, Usuario gestor) {
         this.id = obj.getId();
         this.email = obj.getEmail();
         this.senha = obj.getSenha();
@@ -50,14 +47,8 @@ public class Colaborador extends Usuario {
                         .map(x -> x.getId()).collect(Collectors.toSet());
         addTipoUsuario(TipoUsuario.COLABORADOR);
 
-        this.gestor = gestor;
+        this.setGestor(gestor);
     }
 
-    public Gestor getGestor() {
-        return gestor;
-    }
-
-    public void setGestor(Gestor gestor) {
-        this.gestor = gestor;
-    }
+    // getter/setter for gestor inherited from Usuario
 }

@@ -16,6 +16,7 @@ import br.com.systemmanualdigital.repositories.user.ColaboradorRepository;
 import br.com.systemmanualdigital.repositories.user.GestorRepository;
 import br.com.systemmanualdigital.repositories.user.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -38,16 +39,18 @@ public class DBService {
     private DocumentoRepository documentoRepository;
     @Autowired
     private CampoRepository campoRepository;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public void initDB() {
 
-        Administrador administrador01 = new Administrador(null, "admin@email.com.br", "senha1234", "Nome Administrador", "Nome Empresa");
+        Administrador administrador01 = new Administrador(null, "admin@email.com.br", passwordEncoder.encode("senha1234"), "Nome Administrador", "Nome Empresa");
 
-        Gestor gestor01 = new Gestor(null, "gestor@email.com.br", "senha1234", "Nome Gestor", "Nome Empresa");
+        Gestor gestor01 = new Gestor(null, "gestor@email.com.br", passwordEncoder.encode("senha1234"), "Nome Gestor", "Nome Empresa");
 
-        Colaborador colaborador01 = new Colaborador(null, "colaborador@email.com.br", "senha1234", "Nome Colaborador", "Nome Empresa", gestor01);
+        Colaborador colaborador01 = new Colaborador(null, "colaborador@email.com.br", passwordEncoder.encode("senha1234"), "Nome Colaborador", "Nome Empresa", gestor01);
 
-        FluxoDocumentos fluxo01 = new FluxoDocumentos(null, "Fluxo Impressao","Preenchimento de Checklist",1, gestor01);
+        FluxoDocumentos fluxo01 = new FluxoDocumentos(null, "Fluxo Impressao", "Preenchimento de Checklist", 1, gestor01, gestor01);
 
         Documento documento = new Documento(null,"Checklist Impressao","caminho",1, gestor01, fluxo01);
 
@@ -80,7 +83,6 @@ public class DBService {
                 2,                        // Página diferente para mostrar variação
                 documento
         );
-
 
         administradorRepo.save(administrador01);
         gestorRepository.save(gestor01);

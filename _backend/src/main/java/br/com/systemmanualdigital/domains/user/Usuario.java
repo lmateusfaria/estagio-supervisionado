@@ -52,23 +52,41 @@ public class Usuario {
     protected LocalDate dataUltimoLogin = LocalDate.now();
 
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "usuario")
+    protected List<Documento> documentos = new ArrayList<>();
+
+    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "id_gestor", nullable = true)
+    protected Usuario gestor;
+
     @ElementCollection(fetch = FetchType.LAZY) // ou LAZY, conforme o uso
     @CollectionTable(name = "usuario_tipo", joinColumns = @JoinColumn(name = "usuario_id"))
     @Column(name = "tipo_usuario_id")
     protected Set<Integer> tipoUsuario = new HashSet<>();
-
-
-//    @Enumerated(EnumType.STRING) // Alterado para STRING para maior legibilidade
-//    @Column(name = "tipo_usuario")
-//    protected TipoUsuario tipoUsuario;
+    @JsonIgnore
+    @OneToMany(mappedBy = "criadoPor")
+    protected List<br.com.systemmanualdigital.domains.flow.FluxoDocumentos> fluxosCriados = new ArrayList<>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "usuario") // Relacionamento inverso com FluxoDocumentos
-    protected List<FluxoDocumentos> fluxoDocumentos = new ArrayList<>();
+    @OneToMany(mappedBy = "atualizadoPor")
+    protected List<br.com.systemmanualdigital.domains.flow.FluxoDocumentos> fluxosAtualizados = new ArrayList<>();
+    public List<FluxoDocumentos> getFluxosCriados() {
+        return fluxosCriados;
+    }
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "usuario")
-    protected List<Documento> documentos = new ArrayList<>();
+    public void setFluxosCriados(List<FluxoDocumentos> fluxosCriados) {
+        this.fluxosCriados = fluxosCriados;
+    }
+
+    public List<FluxoDocumentos> getFluxosAtualizados() {
+        return fluxosAtualizados;
+    }
+
+    public void setFluxosAtualizados(List<FluxoDocumentos> fluxosAtualizados) {
+        this.fluxosAtualizados = fluxosAtualizados;
+    }
 
     public Usuario() {
         addTipoUsuario(TipoUsuario.COLABORADOR);
@@ -153,13 +171,6 @@ public class Usuario {
     }
 
 
-    public List<FluxoDocumentos> getFluxoDocumentos() {
-        return fluxoDocumentos;
-    }
-
-    public void setFluxoDocumentos(List<FluxoDocumentos> fluxoDocumentos) {
-        this.fluxoDocumentos = fluxoDocumentos;
-    }
 
     public List<Documento> getDocumentos() {
         return documentos;
@@ -167,6 +178,14 @@ public class Usuario {
 
     public void setDocumentos(List<Documento> documentos) {
         this.documentos = documentos;
+    }
+
+    public Usuario getGestor() {
+        return gestor;
+    }
+
+    public void setGestor(Usuario gestor) {
+        this.gestor = gestor;
     }
 
     public Set<Integer> getTipoUsuario() {

@@ -32,6 +32,12 @@ public class CampoService {
         return obj.orElseThrow(() -> new ObjectNotFoundException("Campo não encontrado! ID: " + id));
     }
 
+    public java.util.List<CampoDTO> findByDocumentoId(Long documentoId) {
+        return campoRepo.findByDocumentoId(documentoId).stream()
+                .map(CampoDTO::new)
+                .collect(java.util.stream.Collectors.toList());
+    }
+
     public Campo create(CampoDTO objDto) {
         Documento doc = documentoRepository.getReferenceById(objDto.getDocumentoId());
         Campo campo = new Campo(objDto.getId(), objDto.getNome(), objDto.getConteudo(), objDto.getPosicaoX(),
@@ -50,7 +56,8 @@ public class CampoService {
     }
 
     public void delete(Long id) {
-        Campo obj = findById(id);
+        // ensure exists (will throw if not found)
+        findById(id);
         campoRepo.deleteById(id);
     }
 }

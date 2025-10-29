@@ -40,6 +40,8 @@ public class GestorDTO {
     private LocalDate dataUltimoLogin = LocalDate.now();
 
     private final Set<Integer> tipoUsuario = new HashSet<>();
+    private Long gestorId;
+    private String nomeGestor;
 
     public GestorDTO() {
     }
@@ -50,7 +52,10 @@ public class GestorDTO {
         this.senha = gestor.getSenha();
         this.nome = gestor.getNome();
         this.nomeEmpresa = gestor.getNomeEmpresa();
-
+        if (gestor.getGestor() != null) {
+            this.gestorId = gestor.getGestor().getId();
+            this.nomeGestor = gestor.getGestor().getNome();
+        }
         gestor.getTipoUsuario().forEach(tipo ->
                 this.tipoUsuario.add(tipo)
         );
@@ -123,6 +128,22 @@ public class GestorDTO {
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario.add(tipoUsuario.getId());
+    }
+
+    public Long getGestorId() {
+        return gestorId;
+    }
+
+    public void setGestorId(Long gestorId) {
+        this.gestorId = gestorId;
+    }
+
+    public String getNomeGestor() {
+        return nomeGestor;
+    }
+
+    public void setNomeGestor(String nomeGestor) {
+        this.nomeGestor = nomeGestor;
     }
 
 }

@@ -23,6 +23,8 @@ public class AdministradorService {
 
     @Autowired
     private UsuarioRepository usuarioRepo;
+    @Autowired
+    private br.com.systemmanualdigital.repositories.user.UsuarioRepository usuarioRepository;
 
     public List<AdministradorDTO> findAll() {
         return administradorRepo.findAll().stream()
@@ -57,14 +59,18 @@ public class AdministradorService {
     public Administrador create(AdministradorDTO objDto){
         objDto.setId(null);
         validaAdministrador(objDto);
+        var gestorUsuario = objDto.getGestorId() != null ? usuarioRepository.findById(objDto.getGestorId()).orElse(null) : null;
         Administrador obj = new Administrador(objDto);
+        if (gestorUsuario != null) obj.setGestor(gestorUsuario);
         return administradorRepo.save(obj);
     }
 
     public Administrador update(Long id, AdministradorDTO objDto){
         objDto.setId(id);
         Administrador oldObj = findbyId(id);
+        var gestorUsuario = objDto.getGestorId() != null ? usuarioRepository.findById(objDto.getGestorId()).orElse(null) : null;
         oldObj = new Administrador(objDto);
+        if (gestorUsuario != null) oldObj.setGestor(gestorUsuario);
         return administradorRepo.save(oldObj);
     }
 
@@ -73,7 +79,7 @@ public class AdministradorService {
         if (!obj.getDocumentos().isEmpty()){
             throw new DataIntegrityViolationException("Administrador não pode ser deletado! Possui documento vinculado.");
         }
-        if (!obj.getFluxoDocumentos().isEmpty()){
+        if (!obj.getFluxosCriados().isEmpty()){
             throw new DataIntegrityViolationException("Administrador não pode ser deletado! Possui fluxo de documentos vinculado.");
         }
 

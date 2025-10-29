@@ -29,11 +29,24 @@ public class DocumentoService {
         return obj.orElseThrow(() -> new ObjectNotFoundException("Documento não encontrado! ID: " + id));
     }
 
+    public java.util.List<DocumentoDTO> findByFluxoId(Long fluxoId) {
+        return documentoRepo.findByFluxoDocumentosId(fluxoId).stream()
+                .map(DocumentoDTO::new)
+                .collect(java.util.stream.Collectors.toList());
+    }
+
+    @Autowired
+    private br.com.systemmanualdigital.repositories.flow.FluxoDocumentosRepository fluxoDocumentosRepository;
+
     public Documento create(DocumentoDTO objDto) {
         objDto.setId(null);
-//        validaAdministrador(objDto);
         Documento obj = new Documento(objDto);
-
+        // Associar fluxo se idFluxo vier preenchido
+        if (objDto.getIdFluxo() != null) {
+            var fluxo = fluxoDocumentosRepository.findById(objDto.getIdFluxo())
+                .orElseThrow(() -> new br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException("Fluxo não encontrado! ID: " + objDto.getIdFluxo()));
+            obj.setFluxoDocumentos(fluxo);
+        }
         return documentoRepo.save(obj);
     }
 
