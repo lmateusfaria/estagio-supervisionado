@@ -11,6 +11,7 @@ import FluxoForm from "./pages/fluxos/FluxoForm";
 import FluxoDocumentos from "./pages/fluxos/FluxoDocumentos";
 import DocumentoDetail from "./pages/documentos/DocumentoDetail";
 import DocumentosPage from "./pages/documentos/DocumentosPage";
+import DocumentoFormPage from "./pages/documentos/DocumentoFormPage";
 import RelatoriosPage from "./pages/relatorios/RelatoriosPage";
 import ConfigPage from "./pages/config/ConfigPage";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -104,12 +105,27 @@ function App() {
                     </ProtectedRoute>
                 }
             />
-            
+            <Route
+                path="/documentos/novo"
+                element={
+                    <ProtectedRoute>
+                        <DocumentoFormPage />
+                    </ProtectedRoute>
+                }
+            />
             <Route
                 path="/documentos/:id"
                 element={
                     <ProtectedRoute>
                         <DocumentoDetail />
+                    </ProtectedRoute>
+                }
+            />
+            <Route
+                path="/fluxos/:id/documentos/novo"
+                element={
+                    <ProtectedRoute>
+                        <DocumentoFormPage />
                     </ProtectedRoute>
                 }
             />
