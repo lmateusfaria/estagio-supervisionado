@@ -7,6 +7,7 @@ import br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,6 +18,12 @@ public class DocumentoService {
 
     @Autowired
     private DocumentoRepository documentoRepo;
+
+    @Autowired
+    private br.com.systemmanualdigital.repositories.flow.FluxoDocumentosRepository fluxoDocumentosRepository;
+
+    @Autowired
+    private br.com.systemmanualdigital.repositories.user.UsuarioRepository usuarioRepository;
 
     public List<DocumentoDTO> findAll() {
         return documentoRepo.findAll().stream()
@@ -35,18 +42,23 @@ public class DocumentoService {
                 .collect(java.util.stream.Collectors.toList());
     }
 
-    @Autowired
-    private br.com.systemmanualdigital.repositories.flow.FluxoDocumentosRepository fluxoDocumentosRepository;
-
     public Documento create(DocumentoDTO objDto) {
         objDto.setId(null);
         Documento obj = new Documento(objDto);
+        
         // Associar fluxo se idFluxo vier preenchido
         if (objDto.getIdFluxo() != null) {
             var fluxo = fluxoDocumentosRepository.findById(objDto.getIdFluxo())
-                .orElseThrow(() -> new br.com.systemmanualdigital.services.exceptions.ObjectNotFoundException("Fluxo não encontrado! ID: " + objDto.getIdFluxo()));
+                .orElseThrow(() -> new ObjectNotFoundException("Fluxo não encontrado! ID: " + objDto.getIdFluxo()));
             obj.setFluxoDocumentos(fluxo);
         }
+        
+        // Buscar usuário logado pelo SecurityContext
+        String emailUsuarioLogado = SecurityContextHolder.getContext().getAuthentication().getName();
+        var usuario = usuarioRepository.findByEmail(emailUsuarioLogado)
+            .orElseThrow(() -> new ObjectNotFoundException("Usuário logado não encontrado: " + emailUsuarioLogado));
+        obj.setUsuario(usuario);
+        
         return documentoRepo.save(obj);
     }
 
